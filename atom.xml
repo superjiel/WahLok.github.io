@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-11T08:06:56.921Z</updated>
+  <updated>2016-10-11T08:50:43.619Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,62 +20,85 @@
     <link href="http://yoursite.com/2016/10/09/Markdown%E8%AF%AD%E6%B3%95/"/>
     <id>http://yoursite.com/2016/10/09/Markdown语法/</id>
     <published>2016-10-09T07:38:53.828Z</published>
-    <updated>2016-10-11T08:06:56.921Z</updated>
+    <updated>2016-10-11T08:50:43.619Z</updated>
     
-    <content type="html"><![CDATA[<p>###1. 标题设置（让字体变大，和word的标题意思一样）<br>在Markdown当中设置标题，有两种方式：<br>第一种：通过在文字下方添加“=”和“-”，他们分别表示一级标题和二级标题。<br>第二种：在文字开头加上 “#”，通过“#”数量表示几级标题。（一共只有1~6级标题，1级标题字体最大）</p>
+    <content type="html"><![CDATA[<h2 id="1-标题设置（让字体变大，和word的标题意思一样）"><a href="#1-标题设置（让字体变大，和word的标题意思一样）" class="headerlink" title="1. 标题设置（让字体变大，和word的标题意思一样）"></a>1. 标题设置（让字体变大，和word的标题意思一样）</h2><p>在Markdown当中设置标题，有两种方式：<br>第一种：通过在文字下方添加“=”和“-”，他们分别表示一级标题和二级标题。<br>第二种：在文字开头加上 “#”，通过“#”数量表示几级标题。（一共只有1~6级标题，1级标题字体最大）</p>
 <figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"># 一级标题</div><div class="line">## 二级标题</div><div class="line">### 三级标题</div><div class="line"></div><div class="line"><span class="section">一级标题</span></div><div class="line">====================</div><div class="line"></div><div class="line"><span class="section">二级标题</span></div><div class="line">---------------------</div></pre></td></tr></table></figure>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><p>##2. 块注释（blockquote）<br>通过在文字开头添加“&gt;”表示块注释。（当&gt;和文字之间添加五个blank时，块注释的文字会有变化。）<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="quote">&gt; 例如这样</span></div></pre></td></tr></table></figure></p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><h2 id="2-块注释（blockquote）"><a href="#2-块注释（blockquote）" class="headerlink" title="2. 块注释（blockquote）"></a>2. 块注释（blockquote）</h2><p>通过在文字开头添加“&gt;”表示块注释。（当&gt;和文字之间添加五个blank时，块注释的文字会有变化。）<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="quote">&gt; 例如这样</span></div></pre></td></tr></table></figure></p>
 <blockquote>
 <p>例如这样</p>
 </blockquote>
-<p>##3. 斜体<br>将需要设置为斜体的文字两端使用1个“*”或者“_”夹起来<br><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="strong">*这是斜体*</span></div></pre></td></tr></table></figure></p>
+<h2 id="3-斜体"><a href="#3-斜体" class="headerlink" title="3. 斜体"></a>3. 斜体</h2><p>将需要设置为斜体的文字两端使用1个“*”或者“_”夹起来<br><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="strong">*这是斜体*</span></div></pre></td></tr></table></figure></p>
 <p><em>这是斜体</em></p>
-<p>##4. 粗体<br>将需要设置为斜体的文字两端使用2个“*”或者“_”夹起来<br><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">*<span class="strong">*这是粗体*</span><span class="strong">*</span></div></pre></td></tr></table></figure></p>
+<h2 id="4-粗体"><a href="#4-粗体" class="headerlink" title="4. 粗体"></a>4. 粗体</h2><p>将需要设置为斜体的文字两端使用2个“*”或者“_”夹起来<br><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">*<span class="strong">*这是粗体*</span><span class="strong">*</span></div></pre></td></tr></table></figure></p>
 <p><strong>这是粗体</strong></p>
-<p>##5. 无序列表<br>在文字开头添加(<em>, +, and -)实现无序列表。但是要注意在(</em>, +, and -)和文字之间需要添加空格。（建议：一个文档中只用一种无序列表的表示方式）<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">* 一级条目<span class="number">1</span></div><div class="line">* 一级条目<span class="number">2</span></div><div class="line">  * 二级条目<span class="number">1</span></div><div class="line">  * 二级条目<span class="number">2</span></div><div class="line">* 三级条目<span class="number">1</span></div><div class="line">* 三级条目<span class="number">2</span></div><div class="line">* 三级条目<span class="number">3</span></div><div class="line">  * 二级条目<span class="number">3</span></div><div class="line">* 一级条目<span class="number">3</span></div></pre></td></tr></table></figure></p>
+<h2 id="5-无序列表"><a href="#5-无序列表" class="headerlink" title="5. 无序列表"></a>5. 无序列表</h2><p>在文字开头添加(<em>, +, and -)实现无序列表。但是要注意在(</em>, +, and -)和文字之间需要添加空格。（建议：一个文档中只用一种无序列表的表示方式）<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">* 一级条目<span class="number">1</span></div><div class="line">* 一级条目<span class="number">2</span></div><div class="line">  * 二级条目<span class="number">1</span></div><div class="line">  * 二级条目<span class="number">2</span></div><div class="line">* 三级条目<span class="number">1</span></div><div class="line"> * 三级条目<span class="number">2</span></div><div class="line"> * 三级条目<span class="number">3</span></div><div class="line">  * 二级条目<span class="number">3</span></div><div class="line">* 一级条目<span class="number">3</span></div></pre></td></tr></table></figure></p>
 <ul>
 <li>一级条目1</li>
 <li>一级条目2<ul>
 <li>二级条目1</li>
-<li>二级条目2<pre><code>* 三级条目1
-</code></pre><ul>
-<li>三级条目2<ul>
-<li>三级条目3</li>
+<li>二级条目2</li>
 </ul>
 </li>
-</ul>
-</li>
+<li>三级条目1</li>
+<li>三级条目2</li>
+<li>三级条目3<ul>
 <li>二级条目3</li>
 </ul>
 </li>
 <li>一级条目3</li>
 </ul>
-<p>##6. 有序列表<br>使用数字后面跟上句号。（还要有空格）</p>
+<h2 id="6-有序列表"><a href="#6-有序列表" class="headerlink" title="6. 有序列表"></a>6. 有序列表</h2><p>使用数字后面跟上句号。（还要有空格）</p>
 <ol>
 <li>1</li>
 <li>2</li>
 <li>3</li>
 </ol>
-<p>##7. 链接（Links）<br>Markdown中有两种方式，实现链接，分别为内联方式和引用方式。<br>内联方式：This is an <a href="http://example.com/" target="_blank" rel="external">example link</a>.<br>引用方式：<br>I get 10 times more traffic from <a href="http://google.com/" title="Google" target="_blank" rel="external">Google</a> than from <a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="external">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="external">MSN</a>.  </p>
+<h2 id="7-链接（Links）"><a href="#7-链接（Links）" class="headerlink" title="7. 链接（Links）"></a>7. 链接（Links）</h2><p>Markdown中有两种方式，实现链接，分别为内联方式和引用方式。<br>内联方式：This is an <a href="http://example.com/" target="_blank" rel="external">example link</a>.<br>引用方式：<br>I get 10 times more traffic from <a href="http://google.com/" title="Google" target="_blank" rel="external">Google</a> than from <a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="external">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="external">MSN</a>.  </p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">I get 10 times more traffic from [<span class="string">Google</span>][<span class="symbol">1</span>] than from [<span class="string">Yahoo</span>][<span class="symbol">2</span>] or [<span class="string">MSN</span>][<span class="symbol">3</span>].</div><div class="line"></div><div class="line">[<span class="symbol">1</span>]: <span class="link">http://google.com/        "Google" </span></div><div class="line">[<span class="symbol">2</span>]: <span class="link">http://search.yahoo.com/  "Yahoo Search" </span></div><div class="line">[<span class="symbol">3</span>]: <span class="link">http://search.msn.com/    "MSN Search"</span></div></pre></td></tr></table></figure>
-<p>##8. 图片（Images）<br>图片的处理方式和链接的处理方式，非常的类似。<br>内联方式：<img src="https://help.github.com/assets/images/site/favicon.ico" alt="alt text" title="Title"><br>引用方式：<br><img src="https://help.github.com/assets/images/site/favicon.ico" alt="alt text" title="Title"> </p>
+<h2 id="8-图片（Images）"><a href="#8-图片（Images）" class="headerlink" title="8. 图片（Images）"></a>8. 图片（Images）</h2><p>图片的处理方式和链接的处理方式，非常的类似。<br>内联方式：<img src="https://help.github.com/assets/images/site/favicon.ico" alt="alt text" title="Title"><br>引用方式：<br><img src="https://help.github.com/assets/images/site/favicon.ico" alt="alt text" title="Title"> </p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">内联方式：![<span class="string">alt text</span>](<span class="link">https://help.github.com/assets/images/site/favicon.ico  "Title"</span>)</div><div class="line">引用方式：</div><div class="line">![<span class="string">alt text</span>][<span class="symbol">id</span>] </div><div class="line"></div><div class="line">[<span class="symbol">id</span>]: <span class="link">https://help.github.com/assets/images/site/favicon.ico "Title"</span></div></pre></td></tr></table></figure>
-<p>##9. 代码（HTML中所谓的Code）<br>实现方式有两种：<br>第一种：简单文字出现一个代码框。使用<code>&lt;blockquote&gt;</code>。（<code>不是单引号而是左上角的ESC下面~中的</code>）<br>第二种：大片文字需要实现代码框。使用Tab和四个空格。</p>
+<h2 id="9-代码（HTML中所谓的Code）"><a href="#9-代码（HTML中所谓的Code）" class="headerlink" title="9. 代码（HTML中所谓的Code）"></a>9. 代码（HTML中所谓的Code）</h2><p>实现方式有两种：<br>第一种：简单文字出现一个代码框。使用<code>&lt;blockquote&gt;</code>。（<code>不是单引号而是左上角的ESC下面~中的</code>）<br>第二种：大片文字需要实现代码框。使用Tab和四个空格。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@requires_authorization</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">    <span class="comment"># A comment</span></div><div class="line">    <span class="keyword">print</span> <span class="string">'hello world'</span></div></pre></td></tr></table></figure>
-<p>##10. 脚注（footnote）<br>实现方式如下：<br>hello<a href="hi">^hello</a></p>
+<h2 id="10-脚注（footnote）"><a href="#10-脚注（footnote）" class="headerlink" title="10. 脚注（footnote）"></a>10. 脚注（footnote）</h2><p>实现方式如下：<br>hello<a href="hi">^hello</a></p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hello[^hello]</div><div class="line"></div><div class="line">[<span class="symbol">^hello</span>]: <span class="link">hi</span></div></pre></td></tr></table></figure>
-<p>##11. 下划线<br>在空白行下方添加三条“-”横线。（前面讲过在文字下方添加“-”，实现的2级标题）</p>
-<p>##12. 删除线<br>文字有一条删除线的效果</p>
+<h2 id="11-下划线"><a href="#11-下划线" class="headerlink" title="11. 下划线"></a>11. 下划线</h2><p>在空白行下方添加三条“-”横线。（前面讲过在文字下方添加“-”，实现的2级标题）</p>
+<h2 id="12-删除线"><a href="#12-删除线" class="headerlink" title="12. 删除线"></a>12. 删除线</h2><p>文字有一条删除线的效果</p>
 <p><del>删除效果</del></p>
 <figure class="highlight haml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~~删除效果~~</div></pre></td></tr></table></figure>
-<p>##13. 高亮</p>
-<p><code>亮</code><br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">`亮`</div></pre></td></tr></table></figure></p>
-<p>##14. 表格<br>| Tables        | Are           | Cool  |<br>| ————- |:————-:| —–:|<br>| col 3 is      | right-aligned | $1600 |<br>| col 2 is      | centered      |   $12 |<br>| zebra stripes | are neat      |    $1 |<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="params">| Tables        |</span> Are           <span class="params">| Cool  |</span></div><div class="line"><span class="params">| ------------- |</span><span class="symbol">:-------------</span><span class="symbol">:|</span> -----<span class="symbol">:|</span></div><div class="line"><span class="params">| col 3 is      |</span> right-aligned <span class="params">| $1600 |</span></div><div class="line"><span class="params">| col 2 is      |</span> centered      <span class="params">|   $12 |</span></div><div class="line"><span class="params">| zebra stripes |</span> are neat      <span class="params">|    $1 |</span></div></pre></td></tr></table></figure></p>
-]]></content>
+<h2 id="13-高亮"><a href="#13-高亮" class="headerlink" title="13. 高亮"></a>13. 高亮</h2><p><code>亮</code></p>
+<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">`亮`</div></pre></td></tr></table></figure>
+<h2 id="14-表格"><a href="#14-表格" class="headerlink" title="14. 表格"></a>14. 表格</h2><table>
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="params">| Tables        |</span> Are           <span class="params">| Cool  |</span></div><div class="line"><span class="params">| ------------- |</span><span class="symbol">:-------------</span><span class="symbol">:|</span> -----<span class="symbol">:|</span></div><div class="line"><span class="params">| col 3 is      |</span> right-aligned <span class="params">| $1600 |</span></div><div class="line"><span class="params">| col 2 is      |</span> centered      <span class="params">|   $12 |</span></div><div class="line"><span class="params">| zebra stripes |</span> are neat      <span class="params">|    $1 |</span></div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;###1. 标题设置（让字体变大，和word的标题意思一样）&lt;br&gt;在Markdown当中设置标题，有两种方式：&lt;br&gt;第一种：通过在文字下方添加“=”和“-”，他们分别表示一级标题和二级标题。&lt;br&gt;第二种：在文字开头加上 “#”，通过“#”数量表示几级标题。（一共只有1
+      &lt;h2 id=&quot;1-标题设置（让字体变大，和word的标题意思一样）&quot;&gt;&lt;a href=&quot;#1-标题设置（让字体变大，和word的标题意思一样）&quot; class=&quot;headerlink&quot; title=&quot;1. 标题设置（让字体变大，和word的标题意思一样）&quot;&gt;&lt;/a&gt;1. 标题设置
     
     </summary>
     
