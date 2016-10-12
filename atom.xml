@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-11T08:50:43.619Z</updated>
+  <updated>2016-10-12T09:17:47.022Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,23 +16,81 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>软件测试网站导航</title>
+    <link href="http://yoursite.com/2016/10/12/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%BD%91%E7%AB%99%E5%AF%BC%E8%88%AA/"/>
+    <id>http://yoursite.com/2016/10/12/软件测试网站导航/</id>
+    <published>2016-10-12T08:01:20.000Z</published>
+    <updated>2016-10-12T09:17:47.022Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="不定期更新。整合测试网站（排名不分先后）"><a href="#不定期更新。整合测试网站（排名不分先后）" class="headerlink" title="不定期更新。整合测试网站（排名不分先后）"></a>不定期更新。整合测试网站（排名不分先后）</h1><pre><code>内容的质量需要自己去判断，个别可能有广告。博主旨在是给自己行个方便。
+</code></pre><ol>
+<li><a href="http://www.51testing.com/html/90/category-catid-90.html" title="51测试网" target="_blank" rel="external">51测试网</a></li>
+<li><a href="http://developer.51cto.com/testing/" title="51cto软件测试" target="_blank" rel="external">51cto软件测试</a></li>
+<li><a href="http://www.ltesting.net/ceshi/ceshijishu/" title="领测软件测试网站" target="_blank" rel="external">领测软件测试网站</a></li>
+<li><a href="http://www.cnblogs.com/cate/testing/" title="博客园测试频道" target="_blank" rel="external">博客园测试频道</a></li>
+<li><a href="http://www.testtao.com/portal.php" title="测试之道" target="_blank" rel="external">测试之道</a></li>
+<li><a href="http://wenku.spasvo.com/?web=default&amp;webid=2" title="泽众软件测试" target="_blank" rel="external">泽众软件测试</a></li>
+<li><a href="http://www.51sqae.com/portal.php" title="中国软件测试联盟" target="_blank" rel="external">中国软件测试联盟</a></li>
+<li><a href="http://blog.jobbole.com/tag/软件测试/" title="伯乐在线软件测试频道" target="_blank" rel="external">伯乐在线软件测试频道</a></li>
+<li><a href="http://www.testwo.com/article" title="测试窝" target="_blank" rel="external">测试窝</a></li>
+<li><a href="http://www.51ste.com/" title="ste软件测试部落" target="_blank" rel="external">ste软件测试部落</a></li>
+<li><a href="http://www.chinatesting.cn/rjcsgj/" title="中国测试平台" target="_blank" rel="external">中国测试平台</a></li>
+<li><a href="http://www.infoq.com/cn/Testing/articles/12" title="InfoQ测试频道" target="_blank" rel="external">InfoQ测试频道</a></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;不定期更新。整合测试网站（排名不分先后）&quot;&gt;&lt;a href=&quot;#不定期更新。整合测试网站（排名不分先后）&quot; class=&quot;headerlink&quot; title=&quot;不定期更新。整合测试网站（排名不分先后）&quot;&gt;&lt;/a&gt;不定期更新。整合测试网站（排名不分先后）&lt;/h1&gt;&lt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Git基础操作</title>
+    <link href="http://yoursite.com/2016/10/12/Git%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/"/>
+    <id>http://yoursite.com/2016/10/12/Git基础操作/</id>
+    <published>2016-10-12T06:37:01.000Z</published>
+    <updated>2016-10-12T07:14:28.157Z</updated>
+    
+    <content type="html"><![CDATA[<p>介绍几个最基本的，也是最常用的 Git 命令，以后绝大多数时间里用到的也就是这几个命令。<br>需要完整Git知识的可以去到码云出的 <a href="http://git.oschina.net/progit/" title="Git Pro" target="_blank" rel="external">Git Pro</a> 学习。</p>
+<h1 id="1-在目录下新建一个仓库"><a href="#1-在目录下新建一个仓库" class="headerlink" title="1.在目录下新建一个仓库"></a>1.在目录下新建一个仓库</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git init</div></pre></td></tr></table></figure>
+<h1 id="2-将远程现有的仓库克隆到本地"><a href="#2-将远程现有的仓库克隆到本地" class="headerlink" title="2.将远程现有的仓库克隆到本地"></a>2.将远程现有的仓库克隆到本地</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> 远程仓库</div></pre></td></tr></table></figure>
+<h1 id="3-获取远程仓库的所有分支更新并合并到本地"><a href="#3-获取远程仓库的所有分支更新并合并到本地" class="headerlink" title="3.获取远程仓库的所有分支更新并合并到本地"></a>3.获取远程仓库的所有分支更新并合并到本地</h1><p>因为Git总是分支合并,一般就是要先合并,再提交,就是先Pull, 再Push<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git pull 远程仓库</div></pre></td></tr></table></figure></p>
+<h1 id="4-推送本地仓库的更新到远程仓库"><a href="#4-推送本地仓库的更新到远程仓库" class="headerlink" title="4.推送本地仓库的更新到远程仓库"></a>4.推送本地仓库的更新到远程仓库</h1><p>因为Git总是分支合并,一般就是要先合并,再提交,就是先Pull, 再Push<br><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="keyword">push</span></div></pre></td></tr></table></figure></p>
+<h1 id="5-跟踪新文件（把目标文件快照放入暂存区域）"><a href="#5-跟踪新文件（把目标文件快照放入暂存区域）" class="headerlink" title="5.跟踪新文件（把目标文件快照放入暂存区域）"></a>5.跟踪新文件（把目标文件快照放入暂存区域）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git add 文件名/文件夹名</div></pre></td></tr></table></figure>
+<h1 id="5-1跟踪全部修改过的文件"><a href="#5-1跟踪全部修改过的文件" class="headerlink" title="5.1跟踪全部修改过的文件"></a>5.1跟踪全部修改过的文件</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git add 或者 git add --all</div></pre></td></tr></table></figure>
+<h1 id="6-提交你的修改"><a href="#6-提交你的修改" class="headerlink" title="6.提交你的修改"></a>6.提交你的修改</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git commit -m <span class="string">"你的注释"</span></div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;介绍几个最基本的，也是最常用的 Git 命令，以后绝大多数时间里用到的也就是这几个命令。&lt;br&gt;需要完整Git知识的可以去到码云出的 &lt;a href=&quot;http://git.oschina.net/progit/&quot; title=&quot;Git Pro&quot; target=&quot;_blan
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Markdown语法</title>
     <link href="http://yoursite.com/2016/10/09/Markdown%E8%AF%AD%E6%B3%95/"/>
     <id>http://yoursite.com/2016/10/09/Markdown语法/</id>
     <published>2016-10-09T07:38:53.828Z</published>
-    <updated>2016-10-11T08:50:43.619Z</updated>
+    <updated>2016-10-12T06:19:14.222Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="1-标题设置（让字体变大，和word的标题意思一样）"><a href="#1-标题设置（让字体变大，和word的标题意思一样）" class="headerlink" title="1. 标题设置（让字体变大，和word的标题意思一样）"></a>1. 标题设置（让字体变大，和word的标题意思一样）</h2><p>在Markdown当中设置标题，有两种方式：<br>第一种：通过在文字下方添加“=”和“-”，他们分别表示一级标题和二级标题。<br>第二种：在文字开头加上 “#”，通过“#”数量表示几级标题。（一共只有1~6级标题，1级标题字体最大）</p>
+    <content type="html"><![CDATA[<h1 id="1-标题设置（让字体变大，和word的标题意思一样）"><a href="#1-标题设置（让字体变大，和word的标题意思一样）" class="headerlink" title="1. 标题设置（让字体变大，和word的标题意思一样）"></a>1. 标题设置（让字体变大，和word的标题意思一样）</h1><p>在Markdown当中设置标题，有两种方式：<br>第一种：通过在文字下方添加“=”和“-”，他们分别表示一级标题和二级标题。<br>第二种：在文字开头加上 “#”，通过“#”数量表示几级标题。（一共只有1~6级标题，1级标题字体最大）</p>
 <figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"># 一级标题</div><div class="line">## 二级标题</div><div class="line">### 三级标题</div><div class="line"></div><div class="line"><span class="section">一级标题</span></div><div class="line">====================</div><div class="line"></div><div class="line"><span class="section">二级标题</span></div><div class="line">---------------------</div></pre></td></tr></table></figure>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><h2 id="2-块注释（blockquote）"><a href="#2-块注释（blockquote）" class="headerlink" title="2. 块注释（blockquote）"></a>2. 块注释（blockquote）</h2><p>通过在文字开头添加“&gt;”表示块注释。（当&gt;和文字之间添加五个blank时，块注释的文字会有变化。）<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="quote">&gt; 例如这样</span></div></pre></td></tr></table></figure></p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><h1 id="2-块注释（blockquote）"><a href="#2-块注释（blockquote）" class="headerlink" title="2. 块注释（blockquote）"></a>2. 块注释（blockquote）</h1><p>通过在文字开头添加“&gt;”表示块注释。（当&gt;和文字之间添加五个blank时，块注释的文字会有变化。）<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="quote">&gt; 例如这样</span></div></pre></td></tr></table></figure></p>
 <blockquote>
 <p>例如这样</p>
 </blockquote>
-<h2 id="3-斜体"><a href="#3-斜体" class="headerlink" title="3. 斜体"></a>3. 斜体</h2><p>将需要设置为斜体的文字两端使用1个“*”或者“_”夹起来<br><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="strong">*这是斜体*</span></div></pre></td></tr></table></figure></p>
+<h1 id="3-斜体"><a href="#3-斜体" class="headerlink" title="3. 斜体"></a>3. 斜体</h1><p>将需要设置为斜体的文字两端使用1个“*”或者“_”夹起来<br><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="strong">*这是斜体*</span></div></pre></td></tr></table></figure></p>
 <p><em>这是斜体</em></p>
-<h2 id="4-粗体"><a href="#4-粗体" class="headerlink" title="4. 粗体"></a>4. 粗体</h2><p>将需要设置为斜体的文字两端使用2个“*”或者“_”夹起来<br><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">*<span class="strong">*这是粗体*</span><span class="strong">*</span></div></pre></td></tr></table></figure></p>
+<h1 id="4-粗体"><a href="#4-粗体" class="headerlink" title="4. 粗体"></a>4. 粗体</h1><p>将需要设置为斜体的文字两端使用2个“*”或者“_”夹起来<br><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">*<span class="strong">*这是粗体*</span><span class="strong">*</span></div></pre></td></tr></table></figure></p>
 <p><strong>这是粗体</strong></p>
-<h2 id="5-无序列表"><a href="#5-无序列表" class="headerlink" title="5. 无序列表"></a>5. 无序列表</h2><p>在文字开头添加(<em>, +, and -)实现无序列表。但是要注意在(</em>, +, and -)和文字之间需要添加空格。（建议：一个文档中只用一种无序列表的表示方式）<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">* 一级条目<span class="number">1</span></div><div class="line">* 一级条目<span class="number">2</span></div><div class="line">  * 二级条目<span class="number">1</span></div><div class="line">  * 二级条目<span class="number">2</span></div><div class="line">* 三级条目<span class="number">1</span></div><div class="line"> * 三级条目<span class="number">2</span></div><div class="line"> * 三级条目<span class="number">3</span></div><div class="line">  * 二级条目<span class="number">3</span></div><div class="line">* 一级条目<span class="number">3</span></div></pre></td></tr></table></figure></p>
+<h1 id="5-无序列表"><a href="#5-无序列表" class="headerlink" title="5. 无序列表"></a>5. 无序列表</h1><p>在文字开头添加(<em>, +, and -)实现无序列表。但是要注意在(</em>, +, and -)和文字之间需要添加空格。（建议：一个文档中只用一种无序列表的表示方式）<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">* 一级条目<span class="number">1</span></div><div class="line">* 一级条目<span class="number">2</span></div><div class="line">  * 二级条目<span class="number">1</span></div><div class="line">  * 二级条目<span class="number">2</span></div><div class="line">* 三级条目<span class="number">1</span></div><div class="line"> * 三级条目<span class="number">2</span></div><div class="line"> * 三级条目<span class="number">3</span></div><div class="line">  * 二级条目<span class="number">3</span></div><div class="line">* 一级条目<span class="number">3</span></div></pre></td></tr></table></figure></p>
 <ul>
 <li>一级条目1</li>
 <li>一级条目2<ul>
@@ -48,27 +106,27 @@
 </li>
 <li>一级条目3</li>
 </ul>
-<h2 id="6-有序列表"><a href="#6-有序列表" class="headerlink" title="6. 有序列表"></a>6. 有序列表</h2><p>使用数字后面跟上句号。（还要有空格）</p>
+<h1 id="6-有序列表"><a href="#6-有序列表" class="headerlink" title="6. 有序列表"></a>6. 有序列表</h1><p>使用数字后面跟上句号。（还要有空格）</p>
 <ol>
 <li>1</li>
 <li>2</li>
 <li>3</li>
 </ol>
-<h2 id="7-链接（Links）"><a href="#7-链接（Links）" class="headerlink" title="7. 链接（Links）"></a>7. 链接（Links）</h2><p>Markdown中有两种方式，实现链接，分别为内联方式和引用方式。<br>内联方式：This is an <a href="http://example.com/" target="_blank" rel="external">example link</a>.<br>引用方式：<br>I get 10 times more traffic from <a href="http://google.com/" title="Google" target="_blank" rel="external">Google</a> than from <a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="external">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="external">MSN</a>.  </p>
+<h1 id="7-链接（Links）"><a href="#7-链接（Links）" class="headerlink" title="7. 链接（Links）"></a>7. 链接（Links）</h1><p>Markdown中有两种方式，实现链接，分别为内联方式和引用方式。<br>内联方式：This is an <a href="http://example.com/" target="_blank" rel="external">example link</a>.<br>引用方式：<br>I get 10 times more traffic from <a href="http://google.com/" title="Google" target="_blank" rel="external">Google</a> than from <a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="external">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="external">MSN</a>.  </p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">I get 10 times more traffic from [<span class="string">Google</span>][<span class="symbol">1</span>] than from [<span class="string">Yahoo</span>][<span class="symbol">2</span>] or [<span class="string">MSN</span>][<span class="symbol">3</span>].</div><div class="line"></div><div class="line">[<span class="symbol">1</span>]: <span class="link">http://google.com/        "Google" </span></div><div class="line">[<span class="symbol">2</span>]: <span class="link">http://search.yahoo.com/  "Yahoo Search" </span></div><div class="line">[<span class="symbol">3</span>]: <span class="link">http://search.msn.com/    "MSN Search"</span></div></pre></td></tr></table></figure>
-<h2 id="8-图片（Images）"><a href="#8-图片（Images）" class="headerlink" title="8. 图片（Images）"></a>8. 图片（Images）</h2><p>图片的处理方式和链接的处理方式，非常的类似。<br>内联方式：<img src="https://help.github.com/assets/images/site/favicon.ico" alt="alt text" title="Title"><br>引用方式：<br><img src="https://help.github.com/assets/images/site/favicon.ico" alt="alt text" title="Title"> </p>
+<h1 id="8-图片（Images）"><a href="#8-图片（Images）" class="headerlink" title="8. 图片（Images）"></a>8. 图片（Images）</h1><p>图片的处理方式和链接的处理方式，非常的类似。<br>内联方式：<img src="https://help.github.com/assets/images/site/favicon.ico" alt="alt text" title="Title"><br>引用方式：<br><img src="https://help.github.com/assets/images/site/favicon.ico" alt="alt text" title="Title"> </p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">内联方式：![<span class="string">alt text</span>](<span class="link">https://help.github.com/assets/images/site/favicon.ico  "Title"</span>)</div><div class="line">引用方式：</div><div class="line">![<span class="string">alt text</span>][<span class="symbol">id</span>] </div><div class="line"></div><div class="line">[<span class="symbol">id</span>]: <span class="link">https://help.github.com/assets/images/site/favicon.ico "Title"</span></div></pre></td></tr></table></figure>
-<h2 id="9-代码（HTML中所谓的Code）"><a href="#9-代码（HTML中所谓的Code）" class="headerlink" title="9. 代码（HTML中所谓的Code）"></a>9. 代码（HTML中所谓的Code）</h2><p>实现方式有两种：<br>第一种：简单文字出现一个代码框。使用<code>&lt;blockquote&gt;</code>。（<code>不是单引号而是左上角的ESC下面~中的</code>）<br>第二种：大片文字需要实现代码框。使用Tab和四个空格。</p>
+<h1 id="9-代码（HTML中所谓的Code）"><a href="#9-代码（HTML中所谓的Code）" class="headerlink" title="9. 代码（HTML中所谓的Code）"></a>9. 代码（HTML中所谓的Code）</h1><p>实现方式有两种：<br>第一种：简单文字出现一个代码框。使用<code>&lt;blockquote&gt;</code>。（<code>不是单引号而是左上角的ESC下面~中的</code>）<br>第二种：大片文字需要实现代码框。使用Tab和四个空格。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@requires_authorization</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">    <span class="comment"># A comment</span></div><div class="line">    <span class="keyword">print</span> <span class="string">'hello world'</span></div></pre></td></tr></table></figure>
-<h2 id="10-脚注（footnote）"><a href="#10-脚注（footnote）" class="headerlink" title="10. 脚注（footnote）"></a>10. 脚注（footnote）</h2><p>实现方式如下：<br>hello<a href="hi">^hello</a></p>
+<h1 id="10-脚注（footnote）"><a href="#10-脚注（footnote）" class="headerlink" title="10. 脚注（footnote）"></a>10. 脚注（footnote）</h1><p>实现方式如下：<br>hello<a href="hi">^hello</a></p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hello[^hello]</div><div class="line"></div><div class="line">[<span class="symbol">^hello</span>]: <span class="link">hi</span></div></pre></td></tr></table></figure>
-<h2 id="11-下划线"><a href="#11-下划线" class="headerlink" title="11. 下划线"></a>11. 下划线</h2><p>在空白行下方添加三条“-”横线。（前面讲过在文字下方添加“-”，实现的2级标题）</p>
-<h2 id="12-删除线"><a href="#12-删除线" class="headerlink" title="12. 删除线"></a>12. 删除线</h2><p>文字有一条删除线的效果</p>
+<h1 id="11-下划线"><a href="#11-下划线" class="headerlink" title="11. 下划线"></a>11. 下划线</h1><p>在空白行下方添加三条“-”横线。（前面讲过在文字下方添加“-”，实现的2级标题）</p>
+<h1 id="12-删除线"><a href="#12-删除线" class="headerlink" title="12. 删除线"></a>12. 删除线</h1><p>文字有一条删除线的效果</p>
 <p><del>删除效果</del></p>
 <figure class="highlight haml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~~删除效果~~</div></pre></td></tr></table></figure>
-<h2 id="13-高亮"><a href="#13-高亮" class="headerlink" title="13. 高亮"></a>13. 高亮</h2><p><code>亮</code></p>
+<h1 id="13-高亮"><a href="#13-高亮" class="headerlink" title="13. 高亮"></a>13. 高亮</h1><p><code>亮</code></p>
 <figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">`亮`</div></pre></td></tr></table></figure>
-<h2 id="14-表格"><a href="#14-表格" class="headerlink" title="14. 表格"></a>14. 表格</h2><table>
+<h1 id="14-表格"><a href="#14-表格" class="headerlink" title="14. 表格"></a>14. 表格</h1><table>
 <thead>
 <tr>
 <th>Tables</th>
@@ -98,7 +156,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;1-标题设置（让字体变大，和word的标题意思一样）&quot;&gt;&lt;a href=&quot;#1-标题设置（让字体变大，和word的标题意思一样）&quot; class=&quot;headerlink&quot; title=&quot;1. 标题设置（让字体变大，和word的标题意思一样）&quot;&gt;&lt;/a&gt;1. 标题设置
+      &lt;h1 id=&quot;1-标题设置（让字体变大，和word的标题意思一样）&quot;&gt;&lt;a href=&quot;#1-标题设置（让字体变大，和word的标题意思一样）&quot; class=&quot;headerlink&quot; title=&quot;1. 标题设置（让字体变大，和word的标题意思一样）&quot;&gt;&lt;/a&gt;1. 标题设置
     
     </summary>
     
