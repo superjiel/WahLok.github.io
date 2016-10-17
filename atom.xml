@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-13T03:36:27.093Z</updated>
+  <updated>2016-10-17T06:46:53.889Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,116 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>编写测试用例与设计</title>
+    <link href="http://yoursite.com/2016/10/17/%E7%BC%96%E5%86%99%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E4%B8%8E%E8%AE%BE%E8%AE%A1/"/>
+    <id>http://yoursite.com/2016/10/17/编写测试用例与设计/</id>
+    <published>2016-10-17T06:45:27.000Z</published>
+    <updated>2016-10-17T06:46:53.889Z</updated>
+    
+    <content type="html"><![CDATA[<p>即：软件功能拆分，把功能点列出来，然后对每一个功能进行拆分和归纳。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;即：软件功能拆分，把功能点列出来，然后对每一个功能进行拆分和归纳。&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>软件测试工具</title>
+    <link href="http://yoursite.com/2016/10/17/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+    <id>http://yoursite.com/2016/10/17/软件测试工具/</id>
+    <published>2016-10-17T02:49:52.000Z</published>
+    <updated>2016-10-17T05:56:05.395Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="测试工具"><a href="#测试工具" class="headerlink" title="测试工具"></a>测试工具</h1><p>  目前市场上的测试工具很多，可分为静态测试工具、动态测试工具、黑盒测试工具、白盒测试工具、测试执行评估工具、<br>测试管理工具等，因此，对测试工具的选择是一个比较重要的问题，应根据测试需求和实际条件来选择已有的测试工具，或购买、<br>自行开发相应的测试工具。</p>
+<h1 id="搭建测试环境还应注意以下几点："><a href="#搭建测试环境还应注意以下几点：" class="headerlink" title="搭建测试环境还应注意以下几点："></a>搭建测试环境还应注意以下几点：</h1><ul>
+<li>尽量模拟用户的真实使用环境；</li>
+<li>测试环境中尽量不要安装其它与被测试软件无关的软件，但最好安装杀毒软件，以确保系统没有病毒；</li>
+<li>测试环境应与开发环境独立。</li>
+</ul>
+<h1 id="白盒测试工具"><a href="#白盒测试工具" class="headerlink" title="白盒测试工具"></a>白盒测试工具</h1><h4 id="静态测试工具"><a href="#静态测试工具" class="headerlink" title="静态测试工具"></a>静态测试工具</h4><ul>
+<li>职能：主要集中在需求文档、设计文档以及程序结构上，可以进行类型分析、接口分析、输入输出规格说明分析等。</li>
+<li>工具：(更新中)<h4 id="动态测试工具"><a href="#动态测试工具" class="headerlink" title="动态测试工具"></a>动态测试工具</h4></li>
+<li>职能：功能确认与接口策划四、覆盖率分析、性能分析、内存分析等</li>
+<li>工具：（更新中）<h1 id="黑盒测试工具"><a href="#黑盒测试工具" class="headerlink" title="黑盒测试工具"></a>黑盒测试工具</h1></li>
+<li>工具：（更新中）</li>
+<li>分类：<ol>
+<li>功能测试工具</li>
+<li>性能测试工具<h1 id="测试设计和开发工具"><a href="#测试设计和开发工具" class="headerlink" title="测试设计和开发工具"></a>测试设计和开发工具</h1></li>
+</ol>
+</li>
+<li>测试设计： 说明测试被测软件特征或特征组合的方法，确定并选择相关测试用例的过程。</li>
+<li>测试开发： 将测试设计转换成具体的测试用例的过程。</li>
+<li>工具类型： <ol>
+<li>测试数据生成器 （更新中）</li>
+<li>基于需求的测试设计工具</li>
+<li>捕获/回放工具和覆盖分析工具<h1 id="测试执行和评估工具"><a href="#测试执行和评估工具" class="headerlink" title="测试执行和评估工具"></a>测试执行和评估工具</h1></li>
+</ol>
+</li>
+<li>测试执行和评估： 执行测试用例并对结果进行评估的过程，包括选择用于执行的测试用例、设置测试环境、<br>运行所选择的测试<br>记录测试执行活动<br>分析潜在的软件故障并测量测试工作的有效性。</li>
+<li>工具类型：<ol>
+<li>捕获/回放</li>
+<li>覆盖分析</li>
+<li>存储器测试</li>
+</ol>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;测试工具&quot;&gt;&lt;a href=&quot;#测试工具&quot; class=&quot;headerlink&quot; title=&quot;测试工具&quot;&gt;&lt;/a&gt;测试工具&lt;/h1&gt;&lt;p&gt;  目前市场上的测试工具很多，可分为静态测试工具、动态测试工具、黑盒测试工具、白盒测试工具、测试执行评估工具、&lt;br&gt;测试管
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>测试分类</title>
+    <link href="http://yoursite.com/2016/10/17/%E6%B5%8B%E8%AF%95%E5%88%86%E7%B1%BB/"/>
+    <id>http://yoursite.com/2016/10/17/测试分类/</id>
+    <published>2016-10-17T01:34:51.000Z</published>
+    <updated>2016-10-17T02:16:13.825Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="单元测试"><a href="#单元测试" class="headerlink" title="单元测试"></a>单元测试</h1><p>目的：检测程序模块中有无故障存在<br>对象：软件设计的最小单位，与程序设计和编程实现关系密切</p>
+<h1 id="集成测试"><a href="#集成测试" class="headerlink" title="集成测试"></a>集成测试</h1><p>目的：发现与接口有关的模块之间的问题<br>方法：非增式集成测试方法和增式集成测试法</p>
+<h4 id="非增式集成测试方法"><a href="#非增式集成测试方法" class="headerlink" title="非增式集成测试方法"></a>非增式集成测试方法</h4><ol>
+<li>对每一个模块进行单元测试</li>
+<li>在此基础上按程序结构图将各模块连接起来，把连接后的程序当作一个整体进行测试<h4 id="增式集成测试法"><a href="#增式集成测试法" class="headerlink" title="增式集成测试法"></a>增式集成测试法</h4>不断地把待测试模块连接到已测试模块集（或其子集）上， 对待测模块进行测试，知道最后一个模块测试完毕</li>
+</ol>
+<h1 id="确认测试"><a href="#确认测试" class="headerlink" title="确认测试"></a>确认测试</h1><p>目的：对软件产品进行评估以确定其是否满足软件需求的过程</p>
+<h1 id="系统测试"><a href="#系统测试" class="headerlink" title="系统测试"></a>系统测试</h1><p>目的：针对系统中的各个组成部分进行的综合性检验，证明系统的性能<br>测试人员要求：<br>    系统开发人员不能进行系统测试<br>    系统开发组织不能负责系统测试</p>
+<h1 id="验收测试"><a href="#验收测试" class="headerlink" title="验收测试"></a>验收测试</h1><p>目的： 向用户表明所开发的软件系统能够像用户所预定的那样工作<br>主要任务：</p>
+<ul>
+<li>明确规定验收测试通过的标准；</li>
+<li>确定验收测试方法；</li>
+<li>确定测试结果的分析方法；</li>
+<li>确定验收测试的组织和可利用的资源；</li>
+<li>制定验收测试的计划并进行评审；</li>
+<li>设计验收测试的测试用例；</li>
+<li>审查验收测试的准备工作；</li>
+<li>执行验收测试；</li>
+<li>分析测试结果，决定是否通过验收；</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;单元测试&quot;&gt;&lt;a href=&quot;#单元测试&quot; class=&quot;headerlink&quot; title=&quot;单元测试&quot;&gt;&lt;/a&gt;单元测试&lt;/h1&gt;&lt;p&gt;目的：检测程序模块中有无故障存在&lt;br&gt;对象：软件设计的最小单位，与程序设计和编程实现关系密切&lt;/p&gt;
+&lt;h1 id=&quot;集成
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>提问的艺术</title>
