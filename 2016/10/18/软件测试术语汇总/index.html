@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 软件测试术语汇总 · bug是什么意思？</title><meta name="description" content="软件测试术语汇总 - wolokma"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://yoursite.com/atom.xml" title="bug是什么意思？"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/avatar.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="https://github.com/WahLok" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">软件测试术语汇总</h1><div class="post-info">Oct 18, 2016</div><div class="post-content"><h1 id="整理软件测试术语汇总"><a href="#整理软件测试术语汇总" class="headerlink" title="整理软件测试术语汇总"></a>整理软件测试术语汇总</h1><h1 id="集成测试"><a href="#集成测试" class="headerlink" title="集成测试"></a>集成测试</h1><ul>
+<li>集成测试是在软件项目/产品在系统集成过程中所进行的测试，其主要目的是检查软件项目，<br>组件之间的接口是否正确，以及每个组件功能是否按照需求规格说明书编制。根据集成测试计划，<br>一边将软件组件或其他软件单位组合成越来越完整的系统，一边运行该系统，以检测所组成的系统是否正确。 </li>
+<li>包括功能集成测试和非功能集成测试（备注：目前主要进行的是性能、压力、并发、效率测试。）。 </li>
+</ul>
+<h1 id="系统测试"><a href="#系统测试" class="headerlink" title="系统测试"></a>系统测试</h1><ul>
+<li>系统测试是对已经集成好的软件项目/产品系统进行彻底的测试，以验证软件系统功能和性能等满足<br>其需求规格说明书所指定的要求，检查软件的行为和输出是否正确。系统测试按照系统测试计划进行。</li>
+<li>包括功能系统测试和性能、以及非功能性系统测试（备注：目前主要进行的是性能、压力、并发、效率测试。）。 </li>
+</ul>
+<h1 id="冒烟-Smoking-测试"><a href="#冒烟-Smoking-测试" class="headerlink" title="冒烟(Smoking)测试"></a>冒烟(Smoking)测试</h1><ul>
+<li>冒烟测试又称为可接收性测试，是测试部在开始大范围功能或性能测试前，对最基本功能主要流程的简单测试，<br>验证系统是否满足接收测试的标准。满足标准测试部开始测试，否则返回程序开发部重新修订。</li>
+<li>同时测试部协助查找造成该版本不能开始测试的主要原因，程序开发部加以修订。 </li>
+</ul>
+<h1 id="回归测试"><a href="#回归测试" class="headerlink" title="回归测试"></a>回归测试</h1><ul>
+<li>根据已经关闭的缺陷再重新进行的测试。目的在于验证以前出现过但已经修复好的缺陷不再重新出现。</li>
+<li>在验证已经关闭的缺陷不仅要服从缺陷原来出现时的步骤重新测试，而且还要测试有可能受影响的所有功能。<br>因此应当鼓励对所有回归测试用例实现脚本化。</li>
+</ul>
+<h1 id="α测试"><a href="#α测试" class="headerlink" title="α测试"></a>α测试</h1><ul>
+<li>α测试规定是企业内部项目/产品在企业内部试用的过程。 </li>
+<li>根据项目/产品情况，企业高层管理者确定项目/产品是否需要开展α测试。</li>
+<li>α测试可以从软件项目/产品编码结束之时开始，或在项目/产品系统测试完成之后开始，也可以在确认测试过程中产品达到一定的稳定和可靠性之后再开始。</li>
+<li>α测试产品经理主持，产品运维部搭建项目/产品运营环境，需求工程师协助收集新需求，测试经理协助收集产品缺陷。</li>
+</ul>
+<h1 id="β测试"><a href="#β测试" class="headerlink" title="β测试"></a>β测试</h1><ul>
+<li>β测试是由企业的外部用户在实际运营环境下进行的使用。这些用户是与企业签定了支持产品预发行合同的外部客户，他们要求使用该产品，并愿意反馈有关信息给企业。</li>
+<li>β测试由产品经理主持，产品运维部搭建项目/产品运营环境，需求工程师协助收集新需求，测试经理协助收集产品缺陷。</li>
+<li>只有当α测试达到一定的可靠程度时，才开始β测试。由于它处在整个测试的最后阶段，不能指望这时发现主要问题。</li>
+</ul>
+<h1 id="功能性测试"><a href="#功能性测试" class="headerlink" title="功能性测试"></a>功能性测试</h1><ul>
+<li>验证软件功能能否正常按照它的需求规格说明书和设计进行工作。包括满足明确的或者隐含的功能，检验运行软件时的期望行为是否符合原需求。</li>
+</ul>
+<h1 id="可靠性测试"><a href="#可靠性测试" class="headerlink" title="可靠性测试"></a>可靠性测试</h1><ul>
+<li>在规定的一段时间、以及特定环境下，验证软件产品/项目具备稳定运行能力的测试。</li>
+</ul>
+<h1 id="易用性测试"><a href="#易用性测试" class="headerlink" title="易用性测试"></a>易用性测试</h1><ul>
+<li>验证软件产品/项目是否符合大多数用户的使用习惯、以及是否符合国家易用性相关标准。</li>
+</ul>
+<h1 id="性能测试"><a href="#性能测试" class="headerlink" title="性能测试"></a>性能测试</h1><ul>
+<li>在软件工程中，性能测试属于效率测试的一部分。</li>
+<li>按照需求规格说明书中性能测试需求，验证软件的性能水平是否能够满足需求点。</li>
+</ul>
+<h1 id="可维护性测试"><a href="#可维护性测试" class="headerlink" title="可维护性测试"></a>可维护性测试</h1><ul>
+<li>检测软件是否允许或方便的进行修正、改进或更改的能力。</li>
+</ul>
+<h1 id="可移植性测试"><a href="#可移植性测试" class="headerlink" title="可移植性测试"></a>可移植性测试</h1><ul>
+<li>检测软件是否可从某一环境转移到另一环境（系统体系结构、硬件或软件环境）的能力。</li>
+</ul>
+<h1 id="用户文档测试"><a href="#用户文档测试" class="headerlink" title="用户文档测试"></a>用户文档测试</h1><ul>
+<li>完整性：用户文档应包含产品使用所需信息。</li>
+<li>正确性：用户文档中所有信息应是正确的，不能有歧义和错误的表达。</li>
+<li>一致性：用户文档自身内容或相互之间以及与产品描述之间都不应相互矛盾。每个术语的含义宜处处保持一致。</li>
+<li>易理解性：用户文档对于正常执行其工作任务的一般用户是易理解的。</li>
+<li>易浏览性：用户文档宜易于浏览，以使相互关系明确。</li>
+</ul>
+<h1 id="用户界面测试"><a href="#用户界面测试" class="headerlink" title="用户界面测试"></a>用户界面测试</h1><ul>
+<li>分析软件用户界面的设计是否合乎用户期望或要求。它常常包括菜单，对话框及对话框上所有按钮，<br>文字，出错提示，帮助信息（菜单 和在线帮助）等方面的测试。</li>
+</ul>
+<h1 id="白盒测试"><a href="#白盒测试" class="headerlink" title="白盒测试"></a>白盒测试</h1><ul>
+<li>通过程序的源代码进行测试，而不使用用户界面。</li>
+<li>这种类型的测试需要从代码语法和代码规范发现内部代码在算法、溢出、路径、条件等等中的缺陷或者错误，进而加以修正。</li>
+</ul>
+<h1 id="黑盒测试"><a href="#黑盒测试" class="headerlink" title="黑盒测试"></a>黑盒测试</h1><ul>
+<li>通过使用整个软件或某个软件界面严格地执行测试, 而不关心程序源代码。</li>
+<li>测试人员通过输入数据（正确数据、错误数据）看输出的结果，从而了解软件怎样工作。</li>
+</ul>
+<h1 id="灰盒测试"><a href="#灰盒测试" class="headerlink" title="灰盒测试"></a>灰盒测试</h1><ul>
+<li>灰盒测试就像黑盒测试一样是通过用户界面测试，但是测试人员已经有所了解该软件或某个软件功能的源代码程序具体是怎样设计的。甚至于还读过部分源代码。 </li>
+<li>测试人员可以有的放矢地进行某种确定条件的功能测试。</li>
+</ul>
+<h1 id="有效用例"><a href="#有效用例" class="headerlink" title="有效用例"></a>有效用例</h1><ul>
+<li>有效用例(Valid case)或者叫合法输入用例：是已知软件程序能正确地处理的测试用例。</li>
+</ul>
+<h1 id="无效用例"><a href="#无效用例" class="headerlink" title="无效用例"></a>无效用例</h1><ul>
+<li>无效用例（Invalid case）或者出错用例(error case)：描述在不合法输入时程序的反应。也就是程序在不合法输入时可以得到正确的预期处理结果。</li>
+</ul>
+<h1 id="等价类测试"><a href="#等价类测试" class="headerlink" title="等价类测试"></a>等价类测试</h1><ul>
+<li>等价类划分方法把所有可能的输入数据，即程序的输入域划分成若干部分，然后从每一部分中选取少数有代表性的数据做为测试用例。</li>
+<li>等价类的划分有两种不同的情况：<br>1.有效等价类：是指对于程序的规格说明来说，是合理的，有意义的输入数据构成的集合。</li>
+</ul>
+<ol>
+<li>无效等价类：是指对于程序的规格说明来说，是不合理的，无意义的输入数据构成的集合。</li>
+</ol>
+<ul>
+<li>在设计测试用例时，要同时考虑有效等价类和无效等价类的设计。</li>
+</ul>
+<h1 id="边界值测试"><a href="#边界值测试" class="headerlink" title="边界值测试"></a>边界值测试</h1><ul>
+<li>边界值测试，是对等价类测试方法的补充。这里所说的边界是指，相当于输入等价类和输出等价类而言，稍高于其边界值或稍低于其边界值的一些特定情况。</li>
+<li>使用边界值方法设计测试用例，首先应确定边界情况。应当选取正好等于，刚刚大于，或刚刚小于边界的值做为测试数据，而不是选取等价类中的典型值或任意值做为测试数据。</li>
+</ul>
+<h1 id="国际化测试"><a href="#国际化测试" class="headerlink" title="国际化测试"></a>国际化测试</h1><ul>
+<li>验证软件程序在不同国家或区域的平台上也能够如预期运行，支持使用当地常用的日期，字体，文字表示，特殊格式等。</li>
+</ul>
+<h1 id="本地化测试"><a href="#本地化测试" class="headerlink" title="本地化测试"></a>本地化测试</h1><ul>
+<li>本地化测试要验证所有已计划要发布的不同语言版本软件，是否能被正确地翻译成当地语言。</li>
+<li>这类测试一般包括验证菜单，对话框，出错信息，帮助内容等所有用户界面上的文字都能够显示正确翻译好的当地文字。</li>
+</ul>
+<h1 id="测试环境部署"><a href="#测试环境部署" class="headerlink" title="测试环境部署"></a>测试环境部署</h1><ul>
+<li>根据需求规格说明书中硬件环境要求和软件要求，搭建软硬件环境。</li>
+<li>从配置管理库取得程序的源代码，根据编译手册，编译产品包。</li>
+<li>根据安装手册，配置产品测试环境，包括功能和性能系统测试环境。</li>
+<li>在此过程中，存在编译手册和安装手册的验证。</li>
+</ul>
+<h1 id="缺陷"><a href="#缺陷" class="headerlink" title="缺陷"></a>缺陷</h1><ul>
+<li>缺陷也可称为Bug。凡不符合需求规格说明书的定义，都称之为缺陷。</li>
+</ul>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/10/18/笔记本/" class="prev">上一篇</a><a href="/2016/10/17/编写测试用例与设计/" class="next">下一篇</a></div><div class="copyright"><p>© 2016 <a href="http://yoursite.com">wolokma</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>
