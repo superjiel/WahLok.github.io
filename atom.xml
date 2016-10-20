@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-18T08:43:16.488Z</updated>
+  <updated>2016-10-19T02:27:50.188Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>软件测试员应具备的知识：</title>
+    <link href="http://yoursite.com/2016/10/19/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%91%98%E5%BA%94%E5%85%B7%E5%A4%87%E7%9A%84%E7%9F%A5%E8%AF%86%EF%BC%9A/"/>
+    <id>http://yoursite.com/2016/10/19/软件测试员应具备的知识：/</id>
+    <published>2016-10-19T02:08:52.000Z</published>
+    <updated>2016-10-19T02:27:50.188Z</updated>
+    
+    <content type="html"><![CDATA[<ol>
+<li>计算机基础知识</li>
+<li>操作系统基础知识</li>
+<li>数据库基础知识</li>
+<li>中间件基础知识</li>
+<li>程序设计语言</li>
+<li>软件工程知识</li>
+<li>软件测试知识</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;计算机基础知识&lt;/li&gt;
+&lt;li&gt;操作系统基础知识&lt;/li&gt;
+&lt;li&gt;数据库基础知识&lt;/li&gt;
+&lt;li&gt;中间件基础知识&lt;/li&gt;
+&lt;li&gt;程序设计语言&lt;/li&gt;
+&lt;li&gt;软件工程知识&lt;/li&gt;
+&lt;li&gt;软件测试知识&lt;/li&gt;
+&lt;/ol&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>笔记本</title>
