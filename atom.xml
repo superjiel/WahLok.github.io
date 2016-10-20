@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>bug是什么意思？</title>
+  <title>每个bug都有它的脾气</title>
   <subtitle>始终关注场景</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-19T02:27:50.188Z</updated>
+  <updated>2016-10-20T02:28:16.246Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试设计常见问题</title>
+    <link href="http://yoursite.com/2016/10/20/%E6%B5%8B%E8%AF%95%E8%AE%BE%E8%AE%A1%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2016/10/20/测试设计常见问题/</id>
+    <published>2016-10-20T01:39:15.000Z</published>
+    <updated>2016-10-20T02:28:16.246Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="测试大纲"><a href="#测试大纲" class="headerlink" title="测试大纲"></a>测试大纲</h1><h4 id="测试大纲设计原则"><a href="#测试大纲设计原则" class="headerlink" title="测试大纲设计原则"></a>测试大纲设计原则</h4><ul>
+<li>明确需求</li>
+<li>测试人员真正理解待测功能和业务，并能体现出测试人员的测试思路</li>
+<li>结果层次清晰</li>
+<li>覆盖面全</li>
+<li>用于功能测试设计</li>
+</ul>
+<h4 id="测试大纲设计方法"><a href="#测试大纲设计方法" class="headerlink" title="测试大纲设计方法"></a>测试大纲设计方法</h4><ul>
+<li>按模块划分大纲</li>
+<li>按功能点划分大纲</li>
+<li>按菜单划分大纲</li>
+<li>按业务逻辑划分大纲</li>
+</ul>
+<h4 id="测试大纲设计的常见问题"><a href="#测试大纲设计的常见问题" class="headerlink" title="测试大纲设计的常见问题"></a>测试大纲设计的常见问题</h4><ul>
+<li>没有按照需求进行设计</li>
+<li>照搬客户需求，缺少理解分析</li>
+<li>混用多种大纲节点命名</li>
+<li>大纲中出现多种测试类型</li>
+<li>大纲级别划分过粗或过细</li>
+</ul>
+<h1 id="测试用例"><a href="#测试用例" class="headerlink" title="测试用例"></a>测试用例</h1><h4 id="测试用例的定义"><a href="#测试用例的定义" class="headerlink" title="测试用例的定义"></a>测试用例的定义</h4><ul>
+<li>为了验证软件运行正常、执行结果准确，并且所实现的各项功能符合需求而设计的一组（个）或多组（个）数据或操作</li>
+<li>一组（个）或多组（个）数据或操作的优化集合</li>
+<li>大多情况下不能遍历软件所有的逻辑分支及操作</li>
+</ul>
+<h4 id="测试用例设计原则"><a href="#测试用例设计原则" class="headerlink" title="测试用例设计原则"></a>测试用例设计原则</h4><ul>
+<li>以需求为依据</li>
+<li>尽量细化，遍历所测功能，一条用例对应一个验证点</li>
+<li>明确执行用例前的条件准备</li>
+<li>操作步骤清晰，其他人能很好的执行</li>
+<li>预期结果清晰，无二义性</li>
+</ul>
+<h4 id="测试用例设计要素"><a href="#测试用例设计要素" class="headerlink" title="测试用例设计要素"></a>测试用例设计要素</h4><ul>
+<li>用例编号：用例唯一标识</li>
+<li>用例前提条件（可选）：执行用例前所需准备</li>
+<li>用例描述：言简意赅描述测试用例的用途</li>
+<li>操作方法和步骤：有步骤的描述用例执行的操作</li>
+<li>逾期结果：执行了上述操作后，应得到的正确结果</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;测试大纲&quot;&gt;&lt;a href=&quot;#测试大纲&quot; class=&quot;headerlink&quot; title=&quot;测试大纲&quot;&gt;&lt;/a&gt;测试大纲&lt;/h1&gt;&lt;h4 id=&quot;测试大纲设计原则&quot;&gt;&lt;a href=&quot;#测试大纲设计原则&quot; class=&quot;headerlink&quot; title=&quot;测
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>软件测试员应具备的知识：</title>
