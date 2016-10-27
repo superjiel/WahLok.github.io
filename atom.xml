@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>沉浸在找Bug中</title>
-  <subtitle>始终关注场景</subtitle>
+  <title>清道夫</title>
+  <subtitle>高举理想的火炬</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-25T09:57:18.671Z</updated>
+  <updated>2016-10-27T10:04:11.596Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,183 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安全测试军火库</title>
+    <link href="http://yoursite.com/2016/10/27/%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%86%9B%E7%81%AB%E5%BA%93/"/>
+    <id>http://yoursite.com/2016/10/27/安全测试军火库/</id>
+    <published>2016-10-27T09:49:33.000Z</published>
+    <updated>2016-10-27T10:04:11.596Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="全球有260万信息安全专业人士，渗透测试工具是他们“安全军火库”中最常使用的装备"><a href="#全球有260万信息安全专业人士，渗透测试工具是他们“安全军火库”中最常使用的装备" class="headerlink" title="全球有260万信息安全专业人士，渗透测试工具是他们“安全军火库”中最常使用的装备"></a>全球有260万信息安全专业人士，渗透测试工具是他们“安全军火库”中最常使用的装备</h1><h1 id="渗透测试时使用的操作系统"><a href="#渗透测试时使用的操作系统" class="headerlink" title="渗透测试时使用的操作系统"></a>渗透测试时使用的操作系统</h1><ol>
+<li>Kali Linux</li>
+<li>Windows</li>
+<li>Black Track</li>
+<li>其他</li>
+<li>Mac OS</li>
+<li>BlackArch Linux</li>
+<li>BackBox</li>
+<li>Pentoo</li>
+</ol>
+<h1 id="最常使用的渗透测试框架"><a href="#最常使用的渗透测试框架" class="headerlink" title="最常使用的渗透测试框架"></a>最常使用的渗透测试框架</h1><ol>
+<li>Metasploit</li>
+<li>其他</li>
+<li>Core Impact</li>
+<li>Immunity Canvas</li>
+</ol>
+<h1 id="最常使用的密码-网络破解工具"><a href="#最常使用的密码-网络破解工具" class="headerlink" title="最常使用的密码/网络破解工具"></a>最常使用的密码/网络破解工具</h1><ol>
+<li>John The Ripper</li>
+<li>Hydra</li>
+<li>Cain &amp; Abel</li>
+<li>其他</li>
+<li>RainbowCrack</li>
+</ol>
+<h1 id="最受欢迎的网络扫描工具"><a href="#最受欢迎的网络扫描工具" class="headerlink" title="最受欢迎的网络扫描工具"></a>最受欢迎的网络扫描工具</h1><ol>
+<li>Nmap</li>
+<li>Netcat</li>
+<li>Zmap</li>
+<li>其他</li>
+</ol>
+<h1 id="最受欢迎的嗅探工具"><a href="#最受欢迎的嗅探工具" class="headerlink" title="最受欢迎的嗅探工具"></a>最受欢迎的嗅探工具</h1><ol>
+<li>Wireshark</li>
+<li>Ettercap</li>
+<li>Dsniff</li>
+<li>其他</li>
+</ol>
+<h1 id="最受欢迎的蓝牙测试工具"><a href="#最受欢迎的蓝牙测试工具" class="headerlink" title="最受欢迎的蓝牙测试工具"></a>最受欢迎的蓝牙测试工具</h1><ol>
+<li>BlueScanner</li>
+<li>其他</li>
+<li>FTS4BT</li>
+<li>BlueSpam</li>
+</ol>
+<h1 id="最受欢迎的无线测试工具"><a href="#最受欢迎的无线测试工具" class="headerlink" title="最受欢迎的无线测试工具"></a>最受欢迎的无线测试工具</h1><ol>
+<li>Aircrack-ng</li>
+<li>Kismet</li>
+<li>其他</li>
+<li>WifiScanner</li>
+</ol>
+<h1 id="最受欢迎的Web应用-网站专业扫描工具"><a href="#最受欢迎的Web应用-网站专业扫描工具" class="headerlink" title="最受欢迎的Web应用/网站专业扫描工具"></a>最受欢迎的Web应用/网站专业扫描工具</h1><ol>
+<li>Burp Suite</li>
+<li>w3af</li>
+<li>其他</li>
+<li>Websecurifu Suite</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;全球有260万信息安全专业人士，渗透测试工具是他们“安全军火库”中最常使用的装备&quot;&gt;&lt;a href=&quot;#全球有260万信息安全专业人士，渗透测试工具是他们“安全军火库”中最常使用的装备&quot; class=&quot;headerlink&quot; title=&quot;全球有260万信息安全专
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>阿里巴巴B2B测试用例编写规范</title>
+    <link href="http://yoursite.com/2016/10/27/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4B2B%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E7%BC%96%E5%86%99%E8%A7%84%E8%8C%83/"/>
+    <id>http://yoursite.com/2016/10/27/阿里巴巴B2B测试用例编写规范/</id>
+    <published>2016-10-27T09:13:05.000Z</published>
+    <updated>2016-10-27T09:18:18.660Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="用例编写规范目的"><a href="#用例编写规范目的" class="headerlink" title="用例编写规范目的"></a>用例编写规范目的</h1><ol>
+<li>统一测试用例编写的规范，为测试设计人员提供测试用例编写的指导，提高编写的测试用例的可读性，可执行性、合理性。</li>
+<li>测试用例，不仅仅用于QA阅读和执行。它们也可能会被开发、PD、PM等阅读审查或执行；也更可能被其他测试人员或者新员工作为业务学习、测试执行的参照。</li>
+<li>编写测试用例的最终目标是：一个对于产品毫无所知的人员，也能够快速的熟悉用例并执行用例。</li>
+</ol>
+<h1 id="例模块划分规范"><a href="#例模块划分规范" class="headerlink" title="例模块划分规范"></a>例模块划分规范</h1><p> 要求：</p>
+<ol>
+<li>产品、功能点同一层级的结构按同一个纬度来划分。如应用、同等级产品、同等级功能点等；</li>
+<li>产品是指产品线下大的业务模块。如交易购物车、交易下单；</li>
+<li>功能点指业务模块下的子功能点，是最小功能点叶子节点。如01 功能-02 购物车展示-01 顶部及导航；</li>
+<li>功能点目前无法再细分层级，后续会扩展功能点层次，在此之前，允许使用功能点名进行分层用例划分。如06 边境仓-03 发货单管理_02 创建发货单；</li>
+<li>产品、功能点划分不允许包含冒烟、回归、自动化这类以测试阶段或测试方法的命名的名称；</li>
+<li>主干用例库中产品、功能点已废弃的需要删除；</li>
+<li>主干用例库中产品、功能点是之前QC迁移过来的，命名格式需要修改标准格式；</li>
+</ol>
+<h1 id="用例颗粒度划分规范"><a href="#用例颗粒度划分规范" class="headerlink" title="用例颗粒度划分规范"></a>用例颗粒度划分规范</h1><p> 用例颗粒度原则：测试用例是执行的最小实体<br> 用例划分基本原则是以最小功能模块来划分，为保障用例的可执行性、覆盖度，规范编写用例的粒度要求如下：</p>
+<ol>
+<li>一个功能正常流程，编写一个测试用例；</li>
+<li>一个功能中多个异常流程，应分开编写多个测试用例；</li>
+<li>同一功能不同入口，可合并编写一个测试用例；</li>
+<li>同一功能不同数据准备，应分开编写多个测试用例；</li>
+<li>同一个功能用例的自动化用例和功能用例要匹配，若自动化用例不能完全覆盖功能用例，自动化用例和功能用例拆分两个互补测试用例；</li>
+</ol>
+<h1 id="用例编写要求规范"><a href="#用例编写要求规范" class="headerlink" title="用例编写要求规范"></a>用例编写要求规范</h1><p> 用例编写最基本的要求：</p>
+<ol>
+<li>具有清晰名称、前提条件、操作步骤、期望结果的；</li>
+<li>可被他人理解的；</li>
+<li>可被他人执行的；</li>
+</ol>
+<p>具体分项要求如下：<br>1.用例名称<br>1）常用的结构“主、谓、宾”；<br>2）名称简洁易懂，不要包括具体操作步骤；</p>
+<ol>
+<li><p>前置条件<br>1）执行用例测试步骤前需要做的所有必备条件，原则上所有用例都有前置条件；<br>2）不可将其他用例作为前置条件，前置条件需要语言描述；<br>3）完整清楚，包括入口、帐号类型、账号权限、数据准备等，具体要求如下：<br>3.1）入口：覆盖所有功能入口，包含URL直接访问；<br>3.2）账号类型和权限：覆盖全部会员类型，注意业务权限控制，比如子账号权限，disable会员权限；<br>3.3）数据准备：数据准备完整正确，覆盖到线上环境的所有情况；标识出业务流程处于的条；件，写明数据库表字段值，如OFFER.status=TBD；对于复杂的数据准备，写清具体SQL</p>
+</li>
+<li><p>操作步骤<br>1）操作步骤描述清晰。如：在什么页面，点击什么链接或按钮；页面入口、链接、按钮名称都要写清楚；<br>2）操作和结果是一一对应的，但操作中不要包含结果的检查；<br>3）用例描述中不允许存在连词、介词，比如：而且，和，还（这种情况可以拆分为多个点）；<br>4）用例描述中不允许出现假设性词汇，比如：假如，或许，可能，…的时候等；<br>5）用例描述中不允许出现二义性语句；</p>
+</li>
+<li><p>预期结果<br>1）原则上每个用例必需要有预期结果，结果不能为空；<br>2）结果中只能包含结果，不能有步骤；<br>3）一个结果有多个检查点时，确保检查点完整；<br>3.1）结果含需要验证的所有结果输出，如页面检查、存储检查、消息检查等；<br>3.2）结果涉及页面，需明确页面提示结果、数据变化；<br>3.3）结果涉及存储：需明确关键值变化、数据库具体的表和关键字字段值变化；<br>3.4）结果涉及消息：需明确关键查看内容；<br>3.5）结果对应不同输入数据有差别时需分别对应描述清晰；</p>
+</li>
+</ol>
+<h1 id="用例维护规范"><a href="#用例维护规范" class="headerlink" title="用例维护规范"></a>用例维护规范</h1><p> 测试用例编写完成后，应对测试用例进行持续的维护：</p>
+<ol>
+<li>新项目需求变更，应及时对测试用例进行修改；</li>
+<li>维护期项目，可根据项目组情况周期对用例进行维护；</li>
+<li>所有发现的bug和故障，基于测试用例无法发现，需转化为测试用例；</li>
+<li>项目发布后的三个工作日内，需将项目用例根据具体情况归入产品功能用例库下；</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;用例编写规范目的&quot;&gt;&lt;a href=&quot;#用例编写规范目的&quot; class=&quot;headerlink&quot; title=&quot;用例编写规范目的&quot;&gt;&lt;/a&gt;用例编写规范目的&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;统一测试用例编写的规范，为测试设计人员提供测试用例编写的指导，提高编写的测试用例
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Web安全测试大纲</title>
+    <link href="http://yoursite.com/2016/10/26/Web%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95%E5%A4%A7%E7%BA%B2/"/>
+    <id>http://yoursite.com/2016/10/26/Web安全测试大纲/</id>
+    <published>2016-10-26T02:33:47.000Z</published>
+    <updated>2016-10-27T09:10:31.267Z</updated>
+    
+    <content type="html"><![CDATA[<p>下文是从其他地方看到的关于WEB安全测试所需的基础知识纲要，大家可以结合本版面的其他WEB安全测试帖子一起学习</p>
+<h1 id="第一章：B-S架构体系安全渗透测试基础"><a href="#第一章：B-S架构体系安全渗透测试基础" class="headerlink" title="第一章：B/S架构体系安全渗透测试基础"></a>第一章：B/S架构体系安全渗透测试基础</h1><ol>
+<li>HTTP协议基本概念<br>（1）介绍HTTP标示URL<br>（2）HTTP响应状态码<br>（3）HTTP协议传输内容</li>
+<li>WEB应用认证基本概念<br>（1）HTTP常见认证机制<br>（2）BASE64编码介绍</li>
+<li>B/S架构常见安全问题<br>（1）拒绝服务攻击基础<br>（2）Smurf攻击模型<br>（3）Fraggle攻击模型<br>（4）SynFlooding攻击模型<br>（5）碎片攻击 </li>
+<li>嗅探理论基础<br>（1）网络嗅探原理<br>（2）密码嗅探介绍<br>（3）协议分析基础介绍 </li>
+</ol>
+<h1 id="第二章：B-S架构体系安全渗透测试攻击基础"><a href="#第二章：B-S架构体系安全渗透测试攻击基础" class="headerlink" title="第二章：B/S架构体系安全渗透测试攻击基础"></a>第二章：B/S架构体系安全渗透测试攻击基础</h1><ol>
+<li>B/S架构结构端口扫描分析<br>（1）SuperScan工具<br>（2）Nmap端口扫描工具</li>
+<li>输入验证攻击基础知识<br>（1）输入验证攻击基本概念<br>（2）Unicode漏洞介绍<br>（3）输入验证二次解码漏洞介绍 </li>
+<li>ASP脚本注入基础知识<br>（1）ASP脚本注入基本概念<br>（2）ASP脚本注入检测<br>（3）ASP脚本注入信息获取<br>（4）AASP脚本注入提权 </li>
+<li>PHP脚本注入基础知识<br>（1）PHP脚本注入基本概念<br>（2）PHP脚本注入检测<br>（3）PHP脚本注入信息获取<br>（4）PHP脚本注入提权 </li>
+<li>跨站脚本原理及防御<br>（1）跨站脚本基本概念<br>（2）跨站脚本实例<br>（3）跨站脚本解决方法 </li>
+<li>Web权限提升分析<br>（1）Web权限提升基本概念<br>（2）WeBShell上传方法<br>（3）Web权限提升7大方法：密码破解、本地提权、Gina木马… </li>
+<li>APR嗅探基础<br>（1）APR协议概念<br>（2）APR欺骗攻击<br>（3） 交换域网络嗅探</li>
+</ol>
+<h1 id="第三章：B-S架构体系安全渗透测试攻击与测试工具"><a href="#第三章：B-S架构体系安全渗透测试攻击与测试工具" class="headerlink" title="第三章：B/S架构体系安全渗透测试攻击与测试工具"></a>第三章：B/S架构体系安全渗透测试攻击与测试工具</h1><ol>
+<li>攻击工具介绍<br>（1）注入攻击工具原理<br>（2）注入攻击工具分析<br>（3）攻击测试平台搭建 </li>
+<li>注入攻击工具使用练习（ASP+SQL Server注入攻击实战）<br>（1）注入攻击工具使用<br>（2）域名检查攻击工具使用及域名信息查询用 </li>
+<li>拒绝服务攻击工具使用练习<br>（1）SynFlooding攻击工具测试<br>（2）UDPflood攻击工具测试<br>（3）畸形DDOS攻击工具 </li>
+<li>嗅探攻击工具使用练习<br>（1）ARP欺骗攻击工具 密码嗅探练习<br>（2）嗅探协议分析练习 </li>
+<li>B/S安全评估工具使用练习<br>（1）Web脚本评估工具安装<br>（2）B/S架构扫描<br>（3）评估报告分析撰写模版</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;下文是从其他地方看到的关于WEB安全测试所需的基础知识纲要，大家可以结合本版面的其他WEB安全测试帖子一起学习&lt;/p&gt;
+&lt;h1 id=&quot;第一章：B-S架构体系安全渗透测试基础&quot;&gt;&lt;a href=&quot;#第一章：B-S架构体系安全渗透测试基础&quot; class=&quot;headerlink
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>软件测试2-8原则</title>
