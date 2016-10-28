@@ -5,15 +5,58 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-27T10:04:11.596Z</updated>
+  <updated>2016-10-28T05:45:20.214Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>wolokma</name>
+    <name>Ifour</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Http状态码</title>
+    <link href="http://yoursite.com/2016/10/28/http%E7%8A%B6%E6%80%81%E7%A0%81/"/>
+    <id>http://yoursite.com/2016/10/28/http状态码/</id>
+    <published>2016-10-28T05:43:46.000Z</published>
+    <updated>2016-10-28T05:45:20.214Z</updated>
+    
+    <content type="html"><![CDATA[<p>HTTP状态码的英文为HTTP Status Code。</p>
+<p>下面是常见的HTTP状态码：</p>
+<p>200 - 请求成功</p>
+<p>301 - 资源（网页等）被永久转移到其它URL</p>
+<p>404 - 请求的资源（网页等）不存在</p>
+<p>500 - 内部服务器错误</p>
+<p>HTTP状态码分类<br>HTTP状态码由三个十进制数字组成，第一个十进制数字定义了状态码的类型，后两个数字没有分类的作用。HTTP状态码共分为5种类型：</p>
+<p>HTTP状态码分类<br>分类    分类描述</p>
+<ul>
+<li>1**    信息，服务器收到请求，需要请求者继续执行操作</li>
+<li>2**    成功，操作被成功接收并处理</li>
+<li>3**    重定向，需要进一步的操作以完成请求</li>
+<li>4**    客户端错误，请求包含语法错误或无法完成请求</li>
+<li>5**    服务器错误，服务器在处理请求的过程中发生了错误</li>
+</ul>
+<p>HTTP状态码列表<br>100    Continue    继续。客户端应继续其请求<br>101    Switching Protocols    切换协议。服务器根据客户端的请求切换协议。只能切换到更高级的协议，例如，切换到HTTP的新版本协议</p>
+<p>200    OK    请求成功。一般用于GET与POST请求<br>201    Created    已创建。成功请求并创建了新的资源<br>202    Accepted    已接受。已经接受请求，但未处理完成<br>203    Non-Authoritative Information    非授权信息。请求成功。但返回的meta信息不在原始的服务器，而是一个副本<br>204    No Content    无内容。服务器成功处理，但未返回内容。在未更新网页的情况下，可确保浏览器继续显示当前文档<br>205    Reset Content    重置内容。服务器处理成功，用户终端（例如：浏览器）应重置文档视图。可通过此返回码清除浏览器的表单域<br>206    Partial Content    部分内容。服务器成功处理了部分GET请求</p>
+<p>300    Multiple Choices    多种选择。请求的资源可包括多个位置，相应可返回一个资源特征与地址的列表用于用户终端（例如：浏览器）选择<br>301    Moved Permanently    永久移动。请求的资源已被永久的移动到新URI，返回信息会包括新的URI，浏览器会自动定向到新URI。今后任何新的请求都应使用新的URI代替<br>302    Found    临时移动。与301类似。但资源只是临时被移动。客户端应继续使用原有URI<br>303    See Other    查看其它地址。与301类似。使用GET和POST请求查看<br>304    Not Modified    未修改。所请求的资源未修改，服务器返回此状态码时，不会返回任何资源。客户端通常会缓存访问过的资源，通过提供一个头信息指出客户端希望只返回在指定日期之后修改的资源<br>305    Use Proxy    使用代理。所请求的资源必须通过代理访问<br>306    Unused    已经被废弃的HTTP状态码<br>307    Temporary Redirect    临时重定向。与302类似。使用GET请求重定向</p>
+<p>400    Bad Request    客户端请求的语法错误，服务器无法理解<br>401    Unauthorized    请求要求用户的身份认证<br>402    Payment Required    保留，将来使用<br>403    Forbidden    服务器理解请求客户端的请求，但是拒绝执行此请求<br>404    Not Found    服务器无法根据客户端的请求找到资源（网页）。通过此代码，网站设计人员可设置”您所请求的资源无法找到”的个性页面<br>405    Method Not Allowed    客户端请求中的方法被禁止<br>406    Not Acceptable    服务器无法根据客户端请求的内容特性完成请求<br>407    Proxy Authentication Required    请求要求代理的身份认证，与401类似，但请求者应当使用代理进行授权<br>408    Request Time-out    服务器等待客户端发送的请求时间过长，超时<br>409    Conflict    服务器完成客户端的PUT请求是可能返回此代码，服务器处理请求时发生了冲突<br>410    Gone    客户端请求的资源已经不存在。410不同于404，如果资源以前有现在被永久删除了可使用410代码，网站设计人员可通过301代码指定资源的新位置<br>411    Length Required    服务器无法处理客户端发送的不带Content-Length的请求信息<br>412    Precondition Failed    客户端请求信息的先决条件错误<br>413    Request Entity Too Large    由于请求的实体过大，服务器无法处理，因此拒绝请求。为防止客户端的连续请求，服务器可能会关闭连接。如果只是服务器暂时无法处理，则会包含一个Retry-After的响应信息<br>414    Request-URI Too Large    请求的URI过长（URI通常为网址），服务器无法处理<br>415    Unsupported Media Type    服务器无法处理请求附带的媒体格式<br>416    Requested range not satisfiable    客户端请求的范围无效<br>417    Expectation Failed    服务器无法满足Expect的请求头信息</p>
+<p>500    Internal Server Error    服务器内部错误，无法完成请求<br>501    Not Implemented    服务器不支持请求的功能，无法完成请求<br>502    Bad Gateway    充当网关或代理的服务器，从远端服务器接收到了一个无效的请求<br>503    Service Unavailable    由于超载或系统维护，服务器暂时的无法处理客户端的请求。延时的长度可包含在服务器的Retry-After头信息中<br>504    Gateway Time-out    充当网关或代理的服务器，未及时从远端服务器获取请求<br>505    HTTP Version not supported    服务器不支持请求的HTTP协议的版本，无法完成处理</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;HTTP状态码的英文为HTTP Status Code。&lt;/p&gt;
+&lt;p&gt;下面是常见的HTTP状态码：&lt;/p&gt;
+&lt;p&gt;200 - 请求成功&lt;/p&gt;
+&lt;p&gt;301 - 资源（网页等）被永久转移到其它URL&lt;/p&gt;
+&lt;p&gt;404 - 请求的资源（网页等）不存在&lt;/p&gt;
+&lt;p&gt;50
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>安全测试军火库</title>
@@ -450,13 +493,24 @@
     <link href="http://yoursite.com/2016/10/18/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
     <id>http://yoursite.com/2016/10/18/笔记本/</id>
     <published>2016-10-18T07:08:17.000Z</published>
-    <updated>2016-10-18T08:43:16.488Z</updated>
+    <updated>2016-10-28T06:55:02.014Z</updated>
     
     <content type="html"><![CDATA[<h1 id="一些日常小笔记本整理。（持续更新）"><a href="#一些日常小笔记本整理。（持续更新）" class="headerlink" title="一些日常小笔记本整理。（持续更新）"></a>一些日常小笔记本整理。（持续更新）</h1><h1 id="软件生命周期："><a href="#软件生命周期：" class="headerlink" title="软件生命周期："></a>软件生命周期：</h1><p>一个软件生命周期包括制定计划、需求分析定义、软件设计、程序编码、软件测试、软件运行、软件维护、软件停用等8个阶段。</p>
 <h1 id="软件测试的基本问题（-1s）"><a href="#软件测试的基本问题（-1s）" class="headerlink" title="软件测试的基本问题（+1s）"></a>软件测试的基本问题（+1s）</h1><p>软件测试在软件生命周期中横跨两个阶段：</p>
 <ul>
 <li>第一个阶段：单元测试与集成测试阶段，即在每个模块编写出以后所做的必要测试。</li>
 <li>第二个阶段：综合测试阶段，即在完成单元测试后进行的测试，如集成测试、系统测试、验收测试。</li>
+</ul>
+<h1 id="学习方法（思维）"><a href="#学习方法（思维）" class="headerlink" title="学习方法（思维）"></a>学习方法（思维）</h1><h4 id="一门新知识。"><a href="#一门新知识。" class="headerlink" title="一门新知识。"></a>一门新知识。</h4><ul>
+<li>了解这门知识的概要轮廓（大概了解：是什么、能做什么、为什么会存在）。</li>
+<li>哪个群体创造/发展的这个知识，这个群体背后的八卦是什么（比如微积分，莱布尼茨和牛顿的八卦），看八卦能更好理解牛人们的思维。</li>
+<li>原来是这样一门有趣的知识呀，开始深入学习。</li>
+<li>查遍全球关键资料，我可不想听一家之言。</li>
+<li>了解这门知识的关联知识是什么。</li>
+<li>心中了然了，原来这门知识是这样的，还有几个XX问题没解决。</li>
+<li>运用知识创造出有趣的或以前不存在的东西，如果能解决几个没解决的XX问题最好。</li>
+<li>一抖身加入这个知识所在的圈子，成为圈内人。</li>
+<li>用跨界思维给这个圈子带来新鲜感，成为圈内认可的人。</li>
 </ul>
 ]]></content>
     
