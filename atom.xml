@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-01T05:28:22.240Z</updated>
+  <updated>2016-11-02T03:24:26.204Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,151 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Web测试方法总结</title>
+    <link href="http://yoursite.com/2016/11/02/web%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2016/11/02/web测试方法总结/</id>
+    <published>2016-11-02T02:50:30.000Z</published>
+    <updated>2016-11-02T03:24:26.204Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、输入框"><a href="#一、输入框" class="headerlink" title="一、输入框"></a>一、输入框</h1><p>在web测试中，我们经常遇到这种输入框的测试，输入框测试看似简单，实际上包含了很多的测试基本的方法，思考逻辑，下面就是我总结出来的一些注意点：<br>1）验证输入输出信息的一致性<br>2）输入框前面的文字提示是否正确<br>3）对特殊字符的处理、识别：单双引号，括号，逗号、分号等等，以及大小写状态，半角全角状态下的情况<br>4）输入框的大小、长度、边框等<br>5）不同字符的输入，以及字符组合情况的处理（数字+字母+字符等）<br>6）对空格、tab换行键的处理机制<br>7）密码输入框字符星号或者其他星号的转行，加密<br>8）输入框输入字符长度是否有限制<br>9）字符本身显示的颜色，规格等<br>10）有些输入框需要加以限制，如输错，是否有提示？提示是否简单合理？<br>11）输入状态，某种情况下输入框出于不可编辑，当再次处于编辑状态，输入框的输入状态是否有变化？<br>12）输入类型：是否允许复制黏贴剪切等输入操作<br>13）关键字是否支持通配符，以及关键字的搜索能力<br>14）输入框输入空格的情况<br>15）比如登陆注册，各项输入条件的判定：是否输入，输入是否正确等</p>
+<ol>
+<li><p>字符型输入框：<br>（1）字符型输入框：英文全角、英文半角、数字、空或者空格、特殊字符“~！@#￥%……&amp;*？[]{}”特别要注意单引号和&amp;符号。禁止直接输入特殊字符时，使用“粘贴、拷贝”功能尝试输入。<br>（2）长度检查：最小长度、最大长度、最小长度-1、最大长度+1、输入超工字符比如把整个文章拷贝过去。<br>（3）空格检查：输入的字符间有空格、字符前有空格、字符后有空格、字符前后有空格<br>（4）多行文本框输入：允许回车换行、保存后再显示能够保存输入的格式、仅输入回车换行，检查能否正确保存（若能，检查保存结果，若不能，查看是否有正常提示）、<br>（5）安全性检查：输入特殊字符串（null，NULL，javascript，<script>，</script>，<title>，<html>，<td>）、输入脚本函数(<script>alert(“abc”)</script>)、doucment.write(“abc”)、<b>hello</b>）</td></html></title></p>
+</li>
+<li><p>数值型输入框：<br>（1）边界值：最大值、最小值、最大值+1、最小值-1<br>（2）位数：最小位数、最大位数、最小位数-1最大位数+1、输入超长值、输入整数<br>（3）异常值、特殊字符：输入空白（NULL）、空格或”~!@#$%^&amp;*()_+{}|<br>[]:”&lt;&gt;?;’，./?;:’-=等可能导致系统错误的字符、禁止直接输入特殊字符时，尝试使用粘贴拷贝查看是否能正常提交、word<br>中的特殊功能，通过剪贴板拷贝到输入框，分页符，分节符类似公式的上下标等、数值的特殊符号如∑，?，?，∏，+，-等、<br>输入负整数、负小数、分数、输入字母或汉字、小数（小数前0点舍去的情况，多个小数点的情况）、首位为0的数字如01、02、科学计数法是否支持1.0E2、全角数字与半角数字、数字与字母混合、16进制，8进制数值、货币型输入（允许小数点后面几位）、<br>（4）安全性检查：不能直接输入就copy</p>
+</li>
+<li><p>日期型输入框：<br>（1）合法性检查：(输入0日、1日、32日)、月输入[1、3、5、7、8、10、12]、日输入[31]、月输入<br>[4、6、9、11]、日输入[30]、[31]、输入非闰年，月输入[2]，日期输入[28、29]、输入闰年，月输入[2]、日期输入[29、30]、<br>月输入[0、1、12、13]<br>(2)异常值、特殊字符：输入空白或NULL、输入~！@#￥%……&amp;*（）{}[]等可能导致系统错误的字符<br>（3）安全性检查：不能直接输入，就copy，是否数据检验出错？</p>
+</li>
+<li>信息重复:在一些需要命名，且名字应该唯一的信息输入重复的名字或ID，看系统有没有处理，会否报错，重名包括是否区分大小写，以及在输入内容的前后输入空格，系统是否作出正确处理.</li>
+</ol>
+<h1 id="二、搜索功能"><a href="#二、搜索功能" class="headerlink" title="二、搜索功能"></a>二、搜索功能</h1><p>若查询条件为输入框，则参考输入框对应类型的测试方法</p>
+<ol>
+<li>功能实现：<br>（1）如果支持模糊查询，搜索名称中任意一个字符是否能搜索到<br>（2）比较长的名称是否能查到<br>（3）输入系统中不存在的与之匹配的条件<br>（4）用户进行查询操作时，一般情况是不进行查询条件的清空，除非需求特殊说明。</li>
+<li>组合测试：<br>（1）不同查询条件之间来回选择，是否出现页面错误（单选框和多选框最容易出错）<br>（2）测试多个查询条件时，要注意查询条件的组合测试，可能不同组合的测试会报错。</li>
+</ol>
+<h1 id="三、添加、修改功能"><a href="#三、添加、修改功能" class="headerlink" title="三、添加、修改功能"></a>三、添加、修改功能</h1><ol>
+<li>特殊键：（1）是否支持Tab键 （2）是否支持回车键</li>
+<li>提示信息：（1）不符合要求的地方是否有错误提示</li>
+<li>唯一性：（1）字段唯一的，是否可以重复添加，添加后是否能修改为已存在的字段（字段包括区分大小写以及在输入的内容前后输入空格，保存后，数据是否真的插入到数据库中，注意保存后数据的正确性）</li>
+<li>数据 正确性：<br>（1）对编辑页的每个编辑项进行修改，点击保存，是否可以保存成功，检查想关联的数据是否得到更新。<br>（2）进行必填项检查（即是否给出提示以及提示后是否依然把数据存到数据库中；是否提示后出现页码错乱等）<br>（3）是否能够连续添加（针对特殊情况）<br>（4）在编辑的时候，注意编辑项的长度限制，有时在添加的时候有，在编辑的时候却没有（注意要添加和修改规则是否一致）<br>（5）对于有图片上传功能的编辑框，若不上传图片，查看编辑页面时是否显示有默认的图片，若上传图片，查看是否显示为上传图片<br>（6）修改后增加数据后，特别要注意查询页面的数据是否及时更新，特别是在首页时要注意数据的更新。<br>（7）提交数据时，连续多次点击，查看系统会不会连续增加几条相同的数据或报错。<br>（8）若结果列表中没有记录或者没选择某条记录，点击修改按钮，系统会抛异常。</li>
+</ol>
+<h1 id="四、删除功能"><a href="#四、删除功能" class="headerlink" title="四、删除功能"></a>四、删除功能</h1><p>1、特殊键：（1）是否支持Tab键 （2）是否支持回车键<br>2、提示信息：（1）不选择任何信息，直接点击删除按钮，是否有提示（2）删除某条信息时，应该有确认提示<br>3、数据 实现：（1）是否能连续删除多个产品（2）当只有一条数据时，是否可以删除成功<br>（3）删除一条数据后，是否可以添加相同的数据（4）如系统支持批量删除，注意删除的信息是否正确<br>（5）如有全选，注意是否把所有的数据删除（6）删除数据时，要注意相应查询页面的数据是否及时更新 （7）如删除的数据与其他业务数据关联，要注意其关联性（如删除部门信息时，部门下游员工，则应该给出提示）（8）如果结果列表中没有记录或没有选择任何一条记录，点击删除按钮系统会报错。<br>如：某一功能模块具有最基本的增删改查功能，则需要进行以下测试<br>单项功能测试（增加、修改、查询、删除）<br>增加——&gt;增加——&gt;增加 （连续增加测试）<br>增加——&gt;删除<br>增加——&gt;删除——&gt;增加 （新增加的内容与删除内容一致）<br>增加——&gt;修改——&gt;删除<br>修改——&gt;修改——&gt;修改 （连续修改测试）<br>修改——&gt;增加（新增加的内容与修改前内容一致）<br>修改——&gt;删除<br>修改——&gt;删除——&gt;增加 （新增加的内容与删除内容一致）<br>删除——&gt;删除——&gt;删除 （连续删除测试）</p>
+<h1 id="五、注册、登陆模块"><a href="#五、注册、登陆模块" class="headerlink" title="五、注册、登陆模块"></a>五、注册、登陆模块</h1><ol>
+<li>注册功能：<br>（1）注册时，设置密码为特殊版本号，检查登录时是否会报错<br>（2）注册成功后，页面应该以登陆状态跳转到首页或指定页面<br>（3）在注册信息中删除已输入的信息，检查是否可以注册成功。</li>
+<li>登陆 功能：<br>（1）输入正确的用户名和正确的密码<br>（2）输入正确的用户名和错误的密码<br>（3）输入错误的用户名和正确的密码<br>（4）输入错误的用户名和错误的密码<br>（5）不输入用户名和密码（均为空格）<br>（6）只输入用户名，密码为空<br>（7）用户名为空，只输入密码<br>（8）输入正确的用户名和密码，但是不区分大小写<br>（9）用户名和密码包括特殊字符<br>（10）用户名和密码输入超长值<br>（11）已删除的用户名和密码<br>（12）登录时，当页面刷新或重新输入数据时，验证码是否更新</li>
+</ol>
+<h1 id="六、上传图片测试"><a href="#六、上传图片测试" class="headerlink" title="六、上传图片测试"></a>六、上传图片测试</h1><ol>
+<li>功能 实现：<br>（1）文件类型正确、大小合适<br>（2）文件类型正确，大小不合适<br>（3）文件类型错误，大小合适<br>（4）文件类型和大小都合适，上传一个正在使用中的图片<br>（5）文件类型大小都合适，手动输入存在的图片地址来上传<br>（6）文件类型和大小都合适，输入不存在的图片地址来上传<br>（7）文件类型和大小都合适，输入图片名称来上传<br>（8）不选择文件直接点击上传，查看是否给出提示<br>（9）连续多次选择不同的文件，查看是否上传最后一次选择的文件</li>
+</ol>
+<h1 id="七、查询结果列表"><a href="#七、查询结果列表" class="headerlink" title="七、查询结果列表"></a>七、查询结果列表</h1><ol>
+<li>功能 实现：<br>（1）列表、列宽是否合理<br>（2）列表数据太宽有没有提供横向滚动<br>（3）列表的列名有没有与内容对应<br>（4）列表的每列的列名是否描述的清晰<br>（5）列表是否把不必要的列都显示出来<br>（6）点击某列进行排序，是否会报错（点击查看每一页的排序是否正确）<br>（7）双击或单击某列信息，是否会报错</li>
+</ol>
+<h1 id="八、用户权限测试"><a href="#八、用户权限测试" class="headerlink" title="八、用户权限测试"></a>八、用户权限测试</h1><p>用户权限，顾名思义，就是该账号拥有哪些执行操作的权利<br>1）给某账号赋予权限后，登陆该账号，查看是否拥有已赋予的权限，以及权限设置是否正确（权限是否超过或者不足）<br>2）删除或修改已经登陆并且正在执行操作的账号权限，程序能否正确处理，验证<br>3）重新注册系统变更登陆身份后再登陆，程序能否正确执行，之前所拥有的权限能否继续使用<br>4）在用工作分配或者角色管理情况下，删除包含用户的工作组或者角色，程序能否正确处理<br>5）不同权限账号登陆同一个系统，权限范围是否正确<br>6）能否给信息为空、长用户名的账号添加权限<br>7）是否允许删除系统管理员或者修改管理员权限？删除或者修改后的实际情况<br>8）已登录的用户能否修改或者删除自己或者他人的权限，信息<br>9）添加用户（有编号或者标识），不同用户名标识的组合情况下，权限能否处理正确<br>10）修改用户权限或者信息后，对其他模块是否有影响<br>11）如果修改用户信息为和已存在的其他用户信息相同，能否修改成功？是否有对应提示？<br>12）修改某些设置，是否会对与该账号权限相同或者高于/低于该账号的其他账号的权限造成影响<br>13）用一用户是否可以同时属于其他组，各个组的权限能否交叉？</p>
+<h1 id="九、返回键检查"><a href="#九、返回键检查" class="headerlink" title="九、返回键检查"></a>九、返回键检查</h1><ol>
+<li>一条已经成功提交的记录，返回后再提交，是否做了处理</li>
+<li>检查多次使用返回键的情况，在有返回键的地方，返回到原来的页面多次，查看是否会出错</li>
+</ol>
+<h1 id="十、回车键检查"><a href="#十、回车键检查" class="headerlink" title="十、回车键检查"></a>十、回车键检查</h1><ol>
+<li>在输入结果后，直接按回车键，看系统如何处理，是否会报错
+　<h1 id="十一、刷新键检查"><a href="#十一、刷新键检查" class="headerlink" title="十一、刷新键检查"></a>十一、刷新键检查</h1></li>
+<li>在Web系统中，使用刷新键，看系统如何处理，是否会报错</li>
+</ol>
+<h1 id="十二、直接URL链接检查"><a href="#十二、直接URL链接检查" class="headerlink" title="十二、直接URL链接检查"></a>十二、直接URL链接检查</h1><ol>
+<li>在Web系统中，在地址栏直接输入各个功能页面的URL地址，看系统如何处理，是否能够直接链接查看（匿名查看），是否有权限控制，是否直接执行，并返回相应结果页；</li>
+</ol>
+<h1 id="十三、界面和易用性测试"><a href="#十三、界面和易用性测试" class="headerlink" title="十三、界面和易用性测试"></a>十三、界面和易用性测试</h1><ol>
+<li>风格、样式、颜色是否协调</li>
+<li>界面布局是否整齐、协调（保证全部显示出来的，尽量不要使用滚动条</li>
+<li>界面操作、标题描述是否恰当（描述有歧义、注意是否有错别字）</li>
+<li>操作是否符合人们的常规习惯（有没有把相似的功能的控件放在一起，方便操作）</li>
+<li>提示界面是否符合规范（不应该显示英文的cancel、ok，应该显示中文的确定等）</li>
+<li>界面中各个控件是否对齐</li>
+<li>日期控件是否可编辑</li>
+<li>日期控件的长度是否合理，以修改时可以把时间全部显示出来为准</li>
+<li>查询结果列表列宽是否合理、标签描述是否合理</li>
+<li>查询结果列表太宽没有横向滚动提示</li>
+<li>对于信息比较长的文本，文本框有没有提供自动竖直滚动条</li>
+<li>数据录入控件是否方便</li>
+<li>有没有支持Tab键，键的顺序要有条理，不乱跳</li>
+<li>有没有提供相关的热键</li>
+<li>控件的提示语描述是否正确</li>
+<li>模块调用是否统一，相同的模块是否调用同一个界面</li>
+<li>用滚动条移动页面时，页面的控件是否显示正常</li>
+<li>日期的正确格式应该是XXXX-XX-XX或XXXX-XX-XX XX:XX:XX</li>
+<li>页面是否有多余按钮或标签</li>
+<li>窗口标题或图标是否与菜单栏的统一</li>
+<li>窗口的最大化、最小化是否能正确切换</li>
+<li>对于正常的功能，用户可以不必阅读用户手册就能使用</li>
+<li>执行风险操作时，有确认、删除等提示吗</li>
+<li>操作顺序是否合理</li>
+<li>正确性检查：检查页面上的form， button， table， header， footer，提示信息，还有其他文字拼写，句子的语法等是否正确。</li>
+<li>系统应该在用户执行错误的操作之前提出警告，提示信息.</li>
+<li>页面分辨率检查，在各种分辨率浏览系统检查系统界面友好性。</li>
+<li>合理性检查：做delete， update， add， cancel， back等操作后，查看信息回到的页面是否合理。</li>
+<li>检查本地化是否通过：英文版不应该有中文信息，英文翻译准确，专业。</li>
+</ol>
+<h1 id="十四、兼容性测试"><a href="#十四、兼容性测试" class="headerlink" title="十四、兼容性测试"></a>十四、兼容性测试</h1><p>2.1平台兼容<br>现在有很多的操作系统，比如Windows、Unix、Linux、macintosh等；用户使用哪个系统取决于用户，因此，系统兼容测试就很有必要了。<br>2.2浏览器兼容<br>浏览器是web客户端最核心的组件，不同的浏览器，对Java，JavaScript，css或者HTML的规格都有不同的支持；另外，采用的框架和结构风格在不同浏览器中也存在不同的显示甚至不显示，不同的浏览器对安全性的设置也是不同的。<br>测试浏览器兼容，有个方法就是创建一个兼容性矩阵，来测试不同厂商不同版本的浏览器兼容。<br>比如测试IE浏览器，可以通过一个叫做IEtester的工具来测试兼容，或者可以通过F12控制台来切换浏览器版本来测试兼容以前一些前端元素的显示等<br>鉴于国内市场浏览器很多，比如360、搜狗，搜狐、QQ浏览器等，这些本土的浏览器基本都采用的IE浏览器内核的双核配置.</p>
+<h1 id="十五、链接测试"><a href="#十五、链接测试" class="headerlink" title="十五、链接测试"></a>十五、链接测试</h1><p>链接是web应用系统的一个很重要的特征，主要是用于页面之间切换跳转，指导用户去一些不知道地址的页面的主要手段，链接测试一般关注三点：<br>1）链接是否按照既定指示那样，确实链接到了该链接的界面<br>2）测试该链接所链接的页面是否真的存在<br>3）保证系统中没有单独存在的页面（即没有链接指向，只能通过正确的URL地址才能访问）<br>1.2表单测试<br>这个也可以理解为数据落地；当用户在web应用系统上向服务器提交信息时，就需要使用表单操作，比如，用户注册，登录，信息变更等等；这种情况下，我们必须测试提交信息的完整性，以检验提交给服务器的数据的正确性，当然，这个还涉及<br>到一些常理性的逻辑，比如，出生日期和职业，工作年限是否恰当，所在地省份城市区域间的匹配等，如果设定使用默认值，也需要测试。<br>1.3导航测试<br>作为测试，很多时候都要站在用户的角度去思考，那么，作为一个用户，当他访问一个web的网站或者系统时，会怎么去操作呢？<br>大家都知道，大部分用户都是目的驱动的，当他访问一个网站或者web系统时，会很快的浏览系统，找不到满足自己需求的信息时，会很快离开，很少有用户愿意花时间去熟悉系统的结构，因此，导航测试就显得很重要了。<br>所谓的导航测试，就是在不同的页面跳转之间，或者按钮，对话框，列表以及窗口等，通过考虑这些因素，去判断一个应用系统是否易于导航：是否直观？系统的主要模块是否可以通过主页访问或者到达？站点是否需要站内地图或者搜索引擎等其他帮助？<br>web系统导航的另外一个重点就是页面结构、导航、菜单、风格等是否一致，确保用户可以凭借直觉或者简单的判断就可以找到自己想要的内容。<br>1.4图形测试<br>也可以理解为UI测试，其中包括图片、动画、边框、颜色、字体、背景、按钮等等。<br>其中要考虑的几个重点，我做了一个大概的总结：<br>1）图片要有明确的用途，代表；图片尺寸尽量小，一般采用JPG或者GIF压缩<br>     2）页面整体风格是否和系统的用途一致<br>3）背景颜色，字体，搭配是否合理<br>1.5内容测试<br>这个主要用来检测web系统提供信息的准确性、相关性<br>比如：商品的价格，文字描述；信息的准确性，是否有拼写错误；信息的相关性，比如很多网站的“相关文章列表，视频列表等”<br>1.6整体界面测试<br>这个也就是我们常说的用户体验。用户浏览时是否感觉舒适，整体风格等等<br>这个我建议一般做一个类似问卷调查的形式，来判定用户的反馈信息，最好有最终用户的参与</p>
+<h1 id="十六、业务流程测试（主要功能测试）"><a href="#十六、业务流程测试（主要功能测试）" class="headerlink" title="十六、业务流程测试（主要功能测试）"></a>十六、业务流程测试（主要功能测试）</h1><p>业务流程，一般会涉及到多个模块的数据，所以在对业务流程测试时，首先要保证单个模块功能的正确性，其次就要对各个模块间传递的数据进行测试，这往往是容易出现问题的地方，测试时一定要设计不同的数据进行测试。</p>
+<h1 id="十七、安全性测试"><a href="#十七、安全性测试" class="headerlink" title="十七、安全性测试"></a>十七、安全性测试</h1><p>（1）SQL注入（比如登陆页面）<br>（2）XSS跨网站脚本攻击：程序或数据库没有对一些特殊字符进行过滤或处理，导致用户所输入的一些破坏性的脚本语句能够直接写进数据库中，浏览器会直接执行这些脚本语句，破坏网站的正常显示，或网站用户的信息被盗，构造脚本语句时，要保证脚本的完整性。<br>document.write(“abc”)</p>
+<p><script>alter(“abc”)</script><br>（3）URL地址后面随便输入一些符号，并尽量是动态参数靠后<br>（4）验证码更新问题<br>（5）现在的Web应用系统基本采用先注册，后登陆的方式。因此，必须测试有效和无效的用户名和密码，要注意到是否大小写敏感，可以试多少次的限制，是否可以不登陆而直接浏览某个页面等。<br>（6）Web应用系统是否有超时的限制，也就是说，用户登陆后在一定时间内（例如15分钟）没有点击任何页面，是否需要重新登陆才能正常使用。<br>（7）为了保证Web应用系统的安全性，日志文件是至关重要的。需要测试相关信息是否写进了日志文件、是否可追踪。<br>（8）当使用了安全套接字时，还要测试加密是否正确，检查信息的完整性。<br>（9）服务器端的脚本常常构成安全漏洞，这些漏洞又常常被黑客利用。所以，还要测试没有经过授权，就不能在服务器端放置和编辑脚本的问题。</p>
+<h1 id="十八、性能测试"><a href="#十八、性能测试" class="headerlink" title="十八、性能测试"></a>十八、性能测试</h1><ol>
+<li>连接速度测试<br>用户连接到Web应用系统的速度根据上网方式的变化而变化，他们或许是电话拨号，或是宽带上网。当下载一个程序时，用户可以等较长的时间，但如果仅仅访问一个页面就不会这样。如果Web系统响应时间太长（例如超过5秒钟），用户就会因没有耐心等待而离开。<br>另外，有些页面有超时的限制，如果响应速度太慢，用户可能还没来得及浏览内容，就需要重新登陆了。而且，连接速度太慢，还可能引起数据丢失，使用户得不到真实的页面。</li>
+<li>负载测试<br>负载测试是为了测量Web系统在某一负载级别上的性能，以保证Web系统在需求范围内能正常工作。负载级别可以是某个时刻同时访问Web系统的用户数量，也可以是在线数据处理的数量。例如：Web应用系统能允许多少个用户同时在线？如果超过了这个数量，会出现什么现象？Web应用系统能否处理大量用户对同一个页面的请求？</li>
+<li>压力测试<br>负载测试应该安排在Web系统发布以后，在实际的网络环境中进行测试。因为一个企业内部员工，特别是项目组人员总是有限的，而一个Web系统能同时处理的请求数量将远远超出这个限度，所以，只有放在Internet上，接受负载测试，其结果才是正确可信的。<br>进行压力测试是指实际破坏一个Web应用系统，测试系统的反映。压力测试是测试系统的限制和故障恢复能力，也就是测试Web应用系统会不会崩溃，在什么情况下会崩溃。黑客常常提供错误的数据负载，直到Web应用系统崩溃，接着当系统重新启动时获得存取权。<br>压力测试的区域包括表单、登陆和其他信息传输页面等。<br>备注：<br>1、负载/压力测试应该关注什么<br>测试需要验证系统能否在同一时间响应大量的用户，在用户传送大量数据的时候能否响应，系统能否长时间运行。可访问性对用户来说是极其重要的。如果用户得到“系统忙”的信息，他们可能放弃，并转向竞争对手。系统检测不仅要使用户能够正常访问站点，在很多情况下，可能会有黑客试图通过发送大量数据包来攻击服务器。出于安全的原因，测试人员应该知道当系统过载时，需要采取哪些措施，而不是简单地提升系统性能。<br>1）瞬间访问高峰<br>如果您的站点用于公布彩票的抽奖结果，最好使系统在中奖号码公布后的一段时间内能够响应上百万的请求。负载测试工具能够模拟X个用户同时访问测试站点。<br>2）每个用户传送大量数据<br>网上书店的多数用户可能只订购1-5书，但是大学书店可能会订购5000本有关心理学介绍的课本?或者一个祖母为她的50个儿孙购买圣诞礼物(当然每个孩子都有自己的邮件地址)系统能处理单个用户的大量数据吗?<br>3）长时间的使用<br>如果站点用于处理鲜花订单，那么至少希望它在母亲节前的一周内能持续运行。如果站点提供基于web的email服务，那么点最好能持续运行几个月，甚至几年。可能需要使用自动测试工具来完成这种类型的测试，因为很难通过手工完成这些测试。你可以想象组织100个人同时点击某个站点。但是同时组织100000个人呢。通常，测试工具在第二次使用的时候，它创造的效益，就足以支付成本。而且，测试工具安装完成之后，再次使用的时候，只要点击几下。<br>采取措施：采用性能测试工具WAS、ACT，LR等协助进行测试</li>
+</ol>
+<h1 id="十九、测试中应该注意的其他情况"><a href="#十九、测试中应该注意的其他情况" class="headerlink" title="十九、测试中应该注意的其他情况"></a>十九、测试中应该注意的其他情况</h1><ol>
+<li>在测试时，与网络有关的步骤或者模块必须考虑到断网的情况</li>
+<li>每个页面都有相应的Title，不能为空，或者显示“无标题页”</li>
+<li>在测试的时候要考虑到页面出现滚动条时，滚动条上下滚动时，页面是否正常</li>
+<li>URL不区分大小写，大小写不敏感</li>
+<li>对于电子商务网站，当用户并发购买数量大于库存的数量时，系统如何处理</li>
+<li>测试数据避免单纯输入“123”、“abc“之类的，让测试数据尽量接近实际</li>
+<li>进行测试时，尽量不要用超级管理员进行测试，用新建的用户进行测试。测试人员尽量不要使用同一个用户进行测试</li>
+<li>提示信息：提示信息是否完整、正确、详细</li>
+<li>帮助信息：是否提供帮助信息，帮助信息的表现形式（页面文字、提示信息、帮助文件），帮助信息是否正确、详细</li>
+<li>可扩展性：是否由升级的余地，是否保留了接口</li>
+<li>稳定性：运行所需的软硬件配置，占用资源情况，出现问题时的容错性，对数据的保护</li>
+<li>运行速度：运行的快慢，带宽占用情况。</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一、输入框&quot;&gt;&lt;a href=&quot;#一、输入框&quot; class=&quot;headerlink&quot; title=&quot;一、输入框&quot;&gt;&lt;/a&gt;一、输入框&lt;/h1&gt;&lt;p&gt;在web测试中，我们经常遇到这种输入框的测试，输入框测试看似简单，实际上包含了很多的测试基本的方法，思考逻辑，下面就
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Python基础</title>
+    <link href="http://yoursite.com/2016/11/01/Python%E5%9F%BA%E7%A1%80/"/>
+    <id>http://yoursite.com/2016/11/01/Python基础/</id>
+    <published>2016-11-01T07:03:02.000Z</published>
+    <updated>2016-11-01T08:07:41.464Z</updated>
+    
+    <content type="html"><![CDATA[<p>在python中，标识符由字母、数字、下划线组成。</p>
+<p>在python中，所有标识符可以包括英文、数字以及下划线（_），但不能以数字开头。</p>
+<p>python中的标识符是区分大小写的。</p>
+<p>以下划线开头的标识符是有特殊意义的。以单下划线开头（_foo）的代表不能直接访问的类属性，需通过类提供的接口进行访问，不能用”from xxx import *”而导入；</p>
+<p>以双下划线开头的（<strong>foo）代表类的私有成员；以双下划线开头和结尾的（</strong>foo<strong>）代表python里特殊方法专用的标识，如</strong>init__（）代表类的构造函数。</p>
+<p>Python的代码块不使用大括号（{}）来控制类，函数以及其他逻辑判断。python用缩进来写模块。(Python的代码块中必须使用相同数目的行首缩进空格数。)</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在python中，标识符由字母、数字、下划线组成。&lt;/p&gt;
+&lt;p&gt;在python中，所有标识符可以包括英文、数字以及下划线（_），但不能以数字开头。&lt;/p&gt;
+&lt;p&gt;python中的标识符是区分大小写的。&lt;/p&gt;
+&lt;p&gt;以下划线开头的标识符是有特殊意义的。以单下划线开头（_f
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>慢性咽喉炎偏方（仅供参考）</title>
@@ -871,121 +1016,6 @@
     <summary type="html">
     
       &lt;h1 id=&quot;不定期更新。整合测试网站（排名不分先后）&quot;&gt;&lt;a href=&quot;#不定期更新。整合测试网站（排名不分先后）&quot; class=&quot;headerlink&quot; title=&quot;不定期更新。整合测试网站（排名不分先后）&quot;&gt;&lt;/a&gt;不定期更新。整合测试网站（排名不分先后）&lt;/h1&gt;&lt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Git基础操作</title>
-    <link href="http://yoursite.com/2016/10/12/Git%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/"/>
-    <id>http://yoursite.com/2016/10/12/Git基础操作/</id>
-    <published>2016-10-12T06:37:01.000Z</published>
-    <updated>2016-10-12T07:14:28.157Z</updated>
-    
-    <content type="html"><![CDATA[<p>介绍几个最基本的，也是最常用的 Git 命令，以后绝大多数时间里用到的也就是这几个命令。<br>需要完整Git知识的可以去到码云出的 <a href="http://git.oschina.net/progit/" title="Git Pro" target="_blank" rel="external">Git Pro</a> 学习。</p>
-<h1 id="1-在目录下新建一个仓库"><a href="#1-在目录下新建一个仓库" class="headerlink" title="1.在目录下新建一个仓库"></a>1.在目录下新建一个仓库</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git init</div></pre></td></tr></table></figure>
-<h1 id="2-将远程现有的仓库克隆到本地"><a href="#2-将远程现有的仓库克隆到本地" class="headerlink" title="2.将远程现有的仓库克隆到本地"></a>2.将远程现有的仓库克隆到本地</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> 远程仓库</div></pre></td></tr></table></figure>
-<h1 id="3-获取远程仓库的所有分支更新并合并到本地"><a href="#3-获取远程仓库的所有分支更新并合并到本地" class="headerlink" title="3.获取远程仓库的所有分支更新并合并到本地"></a>3.获取远程仓库的所有分支更新并合并到本地</h1><p>因为Git总是分支合并,一般就是要先合并,再提交,就是先Pull, 再Push<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git pull 远程仓库</div></pre></td></tr></table></figure></p>
-<h1 id="4-推送本地仓库的更新到远程仓库"><a href="#4-推送本地仓库的更新到远程仓库" class="headerlink" title="4.推送本地仓库的更新到远程仓库"></a>4.推送本地仓库的更新到远程仓库</h1><p>因为Git总是分支合并,一般就是要先合并,再提交,就是先Pull, 再Push<br><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="keyword">push</span></div></pre></td></tr></table></figure></p>
-<h1 id="5-跟踪新文件（把目标文件快照放入暂存区域）"><a href="#5-跟踪新文件（把目标文件快照放入暂存区域）" class="headerlink" title="5.跟踪新文件（把目标文件快照放入暂存区域）"></a>5.跟踪新文件（把目标文件快照放入暂存区域）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git add 文件名/文件夹名</div></pre></td></tr></table></figure>
-<h1 id="5-1跟踪全部修改过的文件"><a href="#5-1跟踪全部修改过的文件" class="headerlink" title="5.1跟踪全部修改过的文件"></a>5.1跟踪全部修改过的文件</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git add 或者 git add --all</div></pre></td></tr></table></figure>
-<h1 id="6-提交你的修改"><a href="#6-提交你的修改" class="headerlink" title="6.提交你的修改"></a>6.提交你的修改</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git commit -m <span class="string">"你的注释"</span></div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;介绍几个最基本的，也是最常用的 Git 命令，以后绝大多数时间里用到的也就是这几个命令。&lt;br&gt;需要完整Git知识的可以去到码云出的 &lt;a href=&quot;http://git.oschina.net/progit/&quot; title=&quot;Git Pro&quot; target=&quot;_blan
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Markdown语法</title>
-    <link href="http://yoursite.com/2016/10/09/Markdown%E8%AF%AD%E6%B3%95/"/>
-    <id>http://yoursite.com/2016/10/09/Markdown语法/</id>
-    <published>2016-10-09T07:38:53.828Z</published>
-    <updated>2016-10-12T06:19:14.222Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="1-标题设置（让字体变大，和word的标题意思一样）"><a href="#1-标题设置（让字体变大，和word的标题意思一样）" class="headerlink" title="1. 标题设置（让字体变大，和word的标题意思一样）"></a>1. 标题设置（让字体变大，和word的标题意思一样）</h1><p>在Markdown当中设置标题，有两种方式：<br>第一种：通过在文字下方添加“=”和“-”，他们分别表示一级标题和二级标题。<br>第二种：在文字开头加上 “#”，通过“#”数量表示几级标题。（一共只有1~6级标题，1级标题字体最大）</p>
-<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"># 一级标题</div><div class="line">## 二级标题</div><div class="line">### 三级标题</div><div class="line"></div><div class="line"><span class="section">一级标题</span></div><div class="line">====================</div><div class="line"></div><div class="line"><span class="section">二级标题</span></div><div class="line">---------------------</div></pre></td></tr></table></figure>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><h1 id="2-块注释（blockquote）"><a href="#2-块注释（blockquote）" class="headerlink" title="2. 块注释（blockquote）"></a>2. 块注释（blockquote）</h1><p>通过在文字开头添加“&gt;”表示块注释。（当&gt;和文字之间添加五个blank时，块注释的文字会有变化。）<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="quote">&gt; 例如这样</span></div></pre></td></tr></table></figure></p>
-<blockquote>
-<p>例如这样</p>
-</blockquote>
-<h1 id="3-斜体"><a href="#3-斜体" class="headerlink" title="3. 斜体"></a>3. 斜体</h1><p>将需要设置为斜体的文字两端使用1个“*”或者“_”夹起来<br><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="strong">*这是斜体*</span></div></pre></td></tr></table></figure></p>
-<p><em>这是斜体</em></p>
-<h1 id="4-粗体"><a href="#4-粗体" class="headerlink" title="4. 粗体"></a>4. 粗体</h1><p>将需要设置为斜体的文字两端使用2个“*”或者“_”夹起来<br><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">*<span class="strong">*这是粗体*</span><span class="strong">*</span></div></pre></td></tr></table></figure></p>
-<p><strong>这是粗体</strong></p>
-<h1 id="5-无序列表"><a href="#5-无序列表" class="headerlink" title="5. 无序列表"></a>5. 无序列表</h1><p>在文字开头添加(<em>, +, and -)实现无序列表。但是要注意在(</em>, +, and -)和文字之间需要添加空格。（建议：一个文档中只用一种无序列表的表示方式）<br><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">* 一级条目<span class="number">1</span></div><div class="line">* 一级条目<span class="number">2</span></div><div class="line">  * 二级条目<span class="number">1</span></div><div class="line">  * 二级条目<span class="number">2</span></div><div class="line">* 三级条目<span class="number">1</span></div><div class="line"> * 三级条目<span class="number">2</span></div><div class="line"> * 三级条目<span class="number">3</span></div><div class="line">  * 二级条目<span class="number">3</span></div><div class="line">* 一级条目<span class="number">3</span></div></pre></td></tr></table></figure></p>
-<ul>
-<li>一级条目1</li>
-<li>一级条目2<ul>
-<li>二级条目1</li>
-<li>二级条目2</li>
-</ul>
-</li>
-<li>三级条目1</li>
-<li>三级条目2</li>
-<li>三级条目3<ul>
-<li>二级条目3</li>
-</ul>
-</li>
-<li>一级条目3</li>
-</ul>
-<h1 id="6-有序列表"><a href="#6-有序列表" class="headerlink" title="6. 有序列表"></a>6. 有序列表</h1><p>使用数字后面跟上句号。（还要有空格）</p>
-<ol>
-<li>1</li>
-<li>2</li>
-<li>3</li>
-</ol>
-<h1 id="7-链接（Links）"><a href="#7-链接（Links）" class="headerlink" title="7. 链接（Links）"></a>7. 链接（Links）</h1><p>Markdown中有两种方式，实现链接，分别为内联方式和引用方式。<br>内联方式：This is an <a href="http://example.com/" target="_blank" rel="external">example link</a>.<br>引用方式：<br>I get 10 times more traffic from <a href="http://google.com/" title="Google" target="_blank" rel="external">Google</a> than from <a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="external">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="external">MSN</a>.  </p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">I get 10 times more traffic from [<span class="string">Google</span>][<span class="symbol">1</span>] than from [<span class="string">Yahoo</span>][<span class="symbol">2</span>] or [<span class="string">MSN</span>][<span class="symbol">3</span>].</div><div class="line"></div><div class="line">[<span class="symbol">1</span>]: <span class="link">http://google.com/        "Google" </span></div><div class="line">[<span class="symbol">2</span>]: <span class="link">http://search.yahoo.com/  "Yahoo Search" </span></div><div class="line">[<span class="symbol">3</span>]: <span class="link">http://search.msn.com/    "MSN Search"</span></div></pre></td></tr></table></figure>
-<h1 id="8-图片（Images）"><a href="#8-图片（Images）" class="headerlink" title="8. 图片（Images）"></a>8. 图片（Images）</h1><p>图片的处理方式和链接的处理方式，非常的类似。<br>内联方式：<img src="https://help.github.com/assets/images/site/favicon.ico" alt="alt text" title="Title"><br>引用方式：<br><img src="https://help.github.com/assets/images/site/favicon.ico" alt="alt text" title="Title"> </p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">内联方式：![<span class="string">alt text</span>](<span class="link">https://help.github.com/assets/images/site/favicon.ico  "Title"</span>)</div><div class="line">引用方式：</div><div class="line">![<span class="string">alt text</span>][<span class="symbol">id</span>] </div><div class="line"></div><div class="line">[<span class="symbol">id</span>]: <span class="link">https://help.github.com/assets/images/site/favicon.ico "Title"</span></div></pre></td></tr></table></figure>
-<h1 id="9-代码（HTML中所谓的Code）"><a href="#9-代码（HTML中所谓的Code）" class="headerlink" title="9. 代码（HTML中所谓的Code）"></a>9. 代码（HTML中所谓的Code）</h1><p>实现方式有两种：<br>第一种：简单文字出现一个代码框。使用<code>&lt;blockquote&gt;</code>。（<code>不是单引号而是左上角的ESC下面~中的</code>）<br>第二种：大片文字需要实现代码框。使用Tab和四个空格。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@requires_authorization</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">    <span class="comment"># A comment</span></div><div class="line">    <span class="keyword">print</span> <span class="string">'hello world'</span></div></pre></td></tr></table></figure>
-<h1 id="10-脚注（footnote）"><a href="#10-脚注（footnote）" class="headerlink" title="10. 脚注（footnote）"></a>10. 脚注（footnote）</h1><p>实现方式如下：<br>hello<a href="hi">^hello</a></p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hello[^hello]</div><div class="line"></div><div class="line">[<span class="symbol">^hello</span>]: <span class="link">hi</span></div></pre></td></tr></table></figure>
-<h1 id="11-下划线"><a href="#11-下划线" class="headerlink" title="11. 下划线"></a>11. 下划线</h1><p>在空白行下方添加三条“-”横线。（前面讲过在文字下方添加“-”，实现的2级标题）</p>
-<h1 id="12-删除线"><a href="#12-删除线" class="headerlink" title="12. 删除线"></a>12. 删除线</h1><p>文字有一条删除线的效果</p>
-<p><del>删除效果</del></p>
-<figure class="highlight haml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~~删除效果~~</div></pre></td></tr></table></figure>
-<h1 id="13-高亮"><a href="#13-高亮" class="headerlink" title="13. 高亮"></a>13. 高亮</h1><p><code>亮</code></p>
-<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">`亮`</div></pre></td></tr></table></figure>
-<h1 id="14-表格"><a href="#14-表格" class="headerlink" title="14. 表格"></a>14. 表格</h1><table>
-<thead>
-<tr>
-<th>Tables</th>
-<th style="text-align:center">Are</th>
-<th style="text-align:right">Cool</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>col 3 is</td>
-<td style="text-align:center">right-aligned</td>
-<td style="text-align:right">$1600</td>
-</tr>
-<tr>
-<td>col 2 is</td>
-<td style="text-align:center">centered</td>
-<td style="text-align:right">$12</td>
-</tr>
-<tr>
-<td>zebra stripes</td>
-<td style="text-align:center">are neat</td>
-<td style="text-align:right">$1</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="params">| Tables        |</span> Are           <span class="params">| Cool  |</span></div><div class="line"><span class="params">| ------------- |</span><span class="symbol">:-------------</span><span class="symbol">:|</span> -----<span class="symbol">:|</span></div><div class="line"><span class="params">| col 3 is      |</span> right-aligned <span class="params">| $1600 |</span></div><div class="line"><span class="params">| col 2 is      |</span> centered      <span class="params">|   $12 |</span></div><div class="line"><span class="params">| zebra stripes |</span> are neat      <span class="params">|    $1 |</span></div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;1-标题设置（让字体变大，和word的标题意思一样）&quot;&gt;&lt;a href=&quot;#1-标题设置（让字体变大，和word的标题意思一样）&quot; class=&quot;headerlink&quot; title=&quot;1. 标题设置（让字体变大，和word的标题意思一样）&quot;&gt;&lt;/a&gt;1. 标题设置
     
     </summary>
     
