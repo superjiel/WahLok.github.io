@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-02T03:49:27.873Z</updated>
+  <updated>2016-11-04T09:46:30.602Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习书单（测试向）</title>
+    <link href="http://yoursite.com/2016/11/04/%E5%AD%A6%E4%B9%A0%E4%B9%A6%E5%8D%95%EF%BC%88%E6%B5%8B%E8%AF%95%E5%90%91%EF%BC%89/"/>
+    <id>http://yoursite.com/2016/11/04/学习书单（测试向）/</id>
+    <published>2016-11-04T09:20:47.000Z</published>
+    <updated>2016-11-04T09:46:30.602Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="可读性高的测试入门书籍"><a href="#可读性高的测试入门书籍" class="headerlink" title="可读性高的测试入门书籍"></a>可读性高的测试入门书籍</h1><ul>
+<li>《批判性思维的工具：心理学的元思想》</li>
+<li>《思考与决策》</li>
+<li>《研究的技巧》</li>
+<li>《旷野中的认知》</li>
+<li>《理论与证据：科学推理的能力的开发》</li>
+<li>《证明与反驳：数学发现的逻辑》</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;可读性高的测试入门书籍&quot;&gt;&lt;a href=&quot;#可读性高的测试入门书籍&quot; class=&quot;headerlink&quot; title=&quot;可读性高的测试入门书籍&quot;&gt;&lt;/a&gt;可读性高的测试入门书籍&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;《批判性思维的工具：心理学的元思想》&lt;/li&gt;
+&lt;li&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Web测试方法总结</title>
@@ -669,7 +697,7 @@
     <link href="http://yoursite.com/2016/10/18/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
     <id>http://yoursite.com/2016/10/18/笔记本/</id>
     <published>2016-10-18T07:08:17.000Z</published>
-    <updated>2016-10-31T06:49:35.455Z</updated>
+    <updated>2016-11-04T05:59:38.260Z</updated>
     
     <content type="html"><![CDATA[<h1 id="一些日常小笔记本整理。（持续更新）"><a href="#一些日常小笔记本整理。（持续更新）" class="headerlink" title="一些日常小笔记本整理。（持续更新）"></a>一些日常小笔记本整理。（持续更新）</h1><h1 id="软件生命周期："><a href="#软件生命周期：" class="headerlink" title="软件生命周期："></a>软件生命周期：</h1><p>一个软件生命周期包括制定计划、需求分析定义、软件设计、程序编码、软件测试、软件运行、软件维护、软件停用等8个阶段。</p>
 <h1 id="软件测试的基本问题（-1s）"><a href="#软件测试的基本问题（-1s）" class="headerlink" title="软件测试的基本问题（+1s）"></a>软件测试的基本问题（+1s）</h1><p>软件测试在软件生命周期中横跨两个阶段：</p>
@@ -696,6 +724,17 @@
 <li>测试需求评审</li>
 </ol>
 <h1 id="何时开始做测试需求分析？"><a href="#何时开始做测试需求分析？" class="headerlink" title="何时开始做测试需求分析？"></a>何时开始做测试需求分析？</h1><p>项目经理通过和客户的交流，完成需求文档，由开发人员和测试人员共同完成需求文档的评审，<br>评审的内容包括：需求描述不清楚的地方和可能有明显冲突或者无法实现的功能的地方。<br>项目经理通过综合开发人员，测试人员以及客户的意见，<br>完成项目计划。然后进入项目，开始进行统计和跟踪</p>
+<h1 id="定个小目标"><a href="#定个小目标" class="headerlink" title="定个小目标"></a>定个小目标</h1><ol>
+<li>脚本能力，python shell 等</li>
+<li>有持续集成这块的经验和能力（如 Jenkins）</li>
+<li>有扎实的测试理论知识，有一定的方法论，有测试体系知识</li>
+<li>Linux 、DB等知识必须具备</li>
+<li>有开发语言基础，如Java 、C，至少能看得懂代码</li>
+<li>至少有一些自动化测试经验，以及一些自动化框架知识</li>
+<li>至少独立负责过某个产品/平台的测试，有一定的事项推动能力</li>
+<li>有新人指导能力（这个阶段，一般都要指导一些新人）</li>
+<li>对业界常用的测试工具了解</li>
+</ol>
 ]]></content>
     
     <summary type="html">
@@ -975,47 +1014,6 @@
     <summary type="html">
     
       &lt;h1 id=&quot;做一个优秀的提问者，能让我们懂得更多！走的更远！摘自-Testhome&quot;&gt;&lt;a href=&quot;#做一个优秀的提问者，能让我们懂得更多！走的更远！摘自-Testhome&quot; class=&quot;headerlink&quot; title=&quot;做一个优秀的提问者，能让我们懂得更多！走的更
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>软件测试网站导航</title>
-    <link href="http://yoursite.com/2016/10/12/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%BD%91%E7%AB%99%E5%AF%BC%E8%88%AA/"/>
-    <id>http://yoursite.com/2016/10/12/软件测试网站导航/</id>
-    <published>2016-10-12T08:01:20.000Z</published>
-    <updated>2016-10-13T09:03:18.269Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="不定期更新。整合测试网站（排名不分先后）"><a href="#不定期更新。整合测试网站（排名不分先后）" class="headerlink" title="不定期更新。整合测试网站（排名不分先后）"></a>不定期更新。整合测试网站（排名不分先后）</h1><pre><code>内容的质量需要自己去判断，个别可能有广告。博主旨在是给自己行个方便。
-</code></pre><ol>
-<li><a href="http://www.51testing.com/html/90/category-catid-90.html" title="51测试网" target="_blank" rel="external">51测试网</a></li>
-<li><a href="http://developer.51cto.com/testing/" title="51cto软件测试" target="_blank" rel="external">51cto软件测试</a></li>
-<li><a href="http://www.ltesting.net/ceshi/ceshijishu/" title="领测软件测试网站" target="_blank" rel="external">领测软件测试网站</a></li>
-<li><a href="http://www.cnblogs.com/cate/testing/" title="博客园测试频道" target="_blank" rel="external">博客园测试频道</a></li>
-<li><a href="http://www.testtao.com/portal.php" title="测试之道" target="_blank" rel="external">测试之道</a></li>
-<li><a href="http://www.spasvo.com/news/html/List_1_1.html" title="泽众软件测试" target="_blank" rel="external">泽众软件测试</a></li>
-<li><a href="http://www.51sqae.com/portal.php" title="中国软件测试联盟" target="_blank" rel="external">中国软件测试联盟</a></li>
-<li><a href="http://blog.jobbole.com/tag/软件测试/" title="伯乐在线软件测试频道" target="_blank" rel="external">伯乐在线软件测试频道</a></li>
-<li><a href="http://www.testwo.com/article" title="测试窝" target="_blank" rel="external">测试窝</a></li>
-<li><a href="http://www.51ste.com/" title="ste软件测试部落" target="_blank" rel="external">ste软件测试部落</a></li>
-<li><a href="http://www.chinatesting.cn/rjcsgj/" title="中国测试平台" target="_blank" rel="external">中国测试平台</a></li>
-<li><a href="http://www.infoq.com/cn/Testing/articles/12" title="InfoQ测试频道" target="_blank" rel="external">InfoQ测试频道</a></li>
-<li><a href="http://utest.qq.com/" title="腾讯优测" target="_blank" rel="external">腾讯优测</a></li>
-<li><a href="http://tmq.qq.com/" title="腾讯移动品质中心" target="_blank" rel="external">腾讯移动品质中心</a></li>
-<li><a href="http://mtc.baidu.com/" title="百度移动云测试中心" target="_blank" rel="external">百度移动云测试中心</a></li>
-<li><a href="http://mqc.aliyun.com/" title="阿里移动质量中心" target="_blank" rel="external">阿里移动质量中心</a></li>
-<li><a href="http://qa.blog.163.com/" title="网易杭州QA博客" target="_blank" rel="external">网易杭州QA博客</a></li>
-<li><a href="https://testerhome.com/" title="testerhome" target="_blank" rel="external">testerhome</a></li>
-<li><a href="http://www.futurehandw.com/" title="FutureWithU-Jason的测试人生" target="_blank" rel="external">FutureWithU-Jason的测试人生</a></li>
-<li><a href="http://tech.meituan.com/" title="美团点评技术团队" target="_blank" rel="external">美团点评技术团队</a></li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;不定期更新。整合测试网站（排名不分先后）&quot;&gt;&lt;a href=&quot;#不定期更新。整合测试网站（排名不分先后）&quot; class=&quot;headerlink&quot; title=&quot;不定期更新。整合测试网站（排名不分先后）&quot;&gt;&lt;/a&gt;不定期更新。整合测试网站（排名不分先后）&lt;/h1&gt;&lt;
     
     </summary>
     
