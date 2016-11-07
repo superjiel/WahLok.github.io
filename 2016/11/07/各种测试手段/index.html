@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 各种测试手段 · 清道夫</title><meta name="description" content="各种测试手段 - Ifour"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://yoursite.com/atom.xml" title="清道夫"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/avatar.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="https://github.com/WahLok" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">各种测试手段</h1><div class="post-info">Nov 7, 2016</div><div class="post-content"><h1 id="测试手段的分类系统（与软件测试术语汇总少有重复）"><a href="#测试手段的分类系统（与软件测试术语汇总少有重复）" class="headerlink" title="测试手段的分类系统（与软件测试术语汇总少有重复）"></a>测试手段的分类系统（与软件测试术语汇总少有重复）</h1><h1 id="五要素测试系统（FIve-fold-Testing-System）"><a href="#五要素测试系统（FIve-fold-Testing-System）" class="headerlink" title="五要素测试系统（FIve-fold Testing System）"></a>五要素测试系统（FIve-fold Testing System）</h1><p>所有的测试都包括这五个要素：</p>
+<ul>
+<li>测试员。<br>进行测试的人。用户测试是由目标市场的成员、通常使用该产品的人进行的专项测试。</li>
+<li>覆盖率。<br>测试了哪些内容。在功能测试中，要测试每个功能。</li>
+<li>潜在问题。测试的原因（要测试什么风险）。测试极值错误。</li>
+<li>活动。如何测试？探索测试。</li>
+<li>评估。怎样判定测试通过还是不通过。 与已知正确结果的比价。</li>
+</ul>
+<p>测试时要时刻想着所有五个要素，就能很好做出组合选择。要有意识地做出类似上面提到的决定，而不是采用或只关注某种手段。</p>
+<h1 id="测试手段"><a href="#测试手段" class="headerlink" title="测试手段"></a>测试手段</h1><ul>
+<li>用户测试<br>由使用该产品的典型人员进行输入的测试。用户测试可以做开发期间任何时候进行。</li>
+<li>α测试<br>由测试小组（可能包括其他感兴趣的内部人员）执行的内部测试。</li>
+<li>β测试<br>利用不属于开发机构并且是产品的目标市场成员的测试员实施的用户测试。待测试产品一般非常接近完成。</li>
+<li>强力测试<br>利用可以找到的任何人所实施的内部测试。强力测试一般持续半天，在软件接近投放市场时进行。</li>
+<li>有关领域的专家测试<br>向软件目标领域内的专家提供产品，并需求反馈意见。看重的是专家的知识，而不是其市场的代表性。</li>
+<li>成对测试<br>两个测试员在一起发现程序错误。一般情况下，他们共用一台计算机，在测试时轮流操作。</li>
+<li>自用测试<br>全公司使用并依靠自己软件的试用版</li>
+<li>功能测试<br>逐个测试每个功能，彻底测试功能，知道可以确信该功能没有问题。白盒功能测试通常叫做单元测试，集中测试可以看到的代码的功能<br>。黑盒功能测试关注命令和特性，以及用户可以做或者选择的事情。在做涉及多个功能的更复杂的测试之前，最好先做功能测试。在复合<br>测试中，第一个出现问题的功能可能会使测试停下来，阻止通过这个测试发现多个其他功能也出现问题。</li>
+<li>特性或功能集成测试<br>一起测试多个功能，以检查功能在一起的执行的情况。</li>
+<li>菜单浏览<br>遍历gui产品中的所有菜单和对话框，使用每个可用的选项。</li>
+<li>域测试<br>域是一个（数字）集合，包含所有可能的函数变量取值。在域测试中要标识函数和变量。变量可以是输入或输出变量。（输入<br>域和值域之间的数字区别在这里无关，因为两种域的测试分析都是一样的。）</li>
+<li>等价类分析<br>测试的都是相同的东西，如果其中一个捕获到一个程序错误、其他测试用例也可能捕获到，如果其中一个不能捕获到某个程序错误<br>，其他测试用例可能也不能捕获到</li>
+<li>边界测试<br>等价类是一组取值。如果可以把成员映射到一列数字上，则边界值就是类的最小和最大值，在边界测试中，要测试这些值，还要测试<br>相邻类的边界值，这些值比要测试的类的最小值略小，必要测试的类的最大值略大。</li>
+<li>逻辑测试<br>变量在程序中有关系。逻辑测试试图检查程序汇中的所有逻辑关系。因国土是一种用于设计大量基于逻辑测试的手段</li>
+<li>基于状态测试<br>在给定状态中，有些输入是有效的，其他输入被忽略或拒绝。对于有效输入，被测程序要完成它可以做的事，并且不尝试它不能做的事<br>。在基于状态的测试中，每次都要通过大量的状态迁移并仔细检查结果来检验程序</li>
+<li>路径测试<br>一条路径包含测试员所测试的所有步骤，或程序为了得到正确状态所通过的所有语句。有些测试员进行子路径测试，测试很多部分路径。</li>
+<li>语句与分支覆盖率<br>如果执行了程序中的所有语句（或代码行），则达到100%的语句覆盖率。如果执行了所有的语句和一个语句到另一个语句之间的所有分支，<br>则达到100%的语句和分支覆盖率。</li>
+<li>配置覆盖率<br>配置覆盖率度量测试人员已经运行（并且程序通过）的配置测试占计划运行的配置测试总数的百分比。</li>
+<li>基于规格说明的测试<br>这种测试关注验证规格说明中所做的有关产品的每个事实声明。（事实声明可以用真或假表示的任何语句）<br>常常包括手册、市场开发文档或给客户的印刷品中的所有声明。</li>
+<li>基于需求的测试<br>测试关注证明程序满足需求中的所有需求（或关注逐个需求地证明某个需求没有被满足）</li>
+<li>组合测试<br>相互组合测试两个或更多变量。</li>
+</ul>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/11/04/学习书单（测试向）/" class="next">NEXT</a></div><div class="copyright"><p>© 2016 <a href="http://yoursite.com">Ifour</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>
